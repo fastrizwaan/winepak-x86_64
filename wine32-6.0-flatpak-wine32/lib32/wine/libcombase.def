@@ -1,0 +1,350 @@
+; File generated automatically from ../dlls/combase/combase.spec; do not edit!
+
+LIBRARY combase.dll
+
+EXPORTS
+  ObjectStublessClient3@0 @1 PRIVATE
+  ObjectStublessClient4@0 @2 PRIVATE
+  ObjectStublessClient5@0 @3 PRIVATE
+  ObjectStublessClient6@0 @4 PRIVATE
+  ObjectStublessClient7@0 @5 PRIVATE
+  ObjectStublessClient8@0 @6 PRIVATE
+  ObjectStublessClient9@0 @7 PRIVATE
+  ObjectStublessClient10@0 @8 PRIVATE
+  ObjectStublessClient11@0 @9 PRIVATE
+  ObjectStublessClient12@0 @10 PRIVATE
+  ObjectStublessClient13@0 @11 PRIVATE
+  ObjectStublessClient14@0 @12 PRIVATE
+  ObjectStublessClient15@0 @13 PRIVATE
+  ObjectStublessClient16@0 @14 PRIVATE
+  ObjectStublessClient17@0 @15 PRIVATE
+  ObjectStublessClient18@0 @16 PRIVATE
+  ObjectStublessClient19@0 @17 PRIVATE
+  ObjectStublessClient20@0 @18 PRIVATE
+  ObjectStublessClient21@0 @19 PRIVATE
+  ObjectStublessClient22@0 @20 PRIVATE
+  ObjectStublessClient23@0 @21 PRIVATE
+  ObjectStublessClient24@0 @22 PRIVATE
+  ObjectStublessClient25@0 @23 PRIVATE
+  ObjectStublessClient26@0 @24 PRIVATE
+  ObjectStublessClient27@0 @25 PRIVATE
+  ObjectStublessClient28@0 @26 PRIVATE
+  ObjectStublessClient29@0 @27 PRIVATE
+  ObjectStublessClient30@0 @28 PRIVATE
+  ObjectStublessClient31@0 @29 PRIVATE
+  ObjectStublessClient32@0 @30 PRIVATE
+  NdrProxyForwardingFunction3@0 @31 PRIVATE
+  NdrProxyForwardingFunction4@0 @32 PRIVATE
+  NdrProxyForwardingFunction5@0 @33 PRIVATE
+  NdrProxyForwardingFunction6@0 @34 PRIVATE
+  NdrProxyForwardingFunction7@0 @35 PRIVATE
+  NdrProxyForwardingFunction8@0 @36 PRIVATE
+  NdrProxyForwardingFunction9@0 @37 PRIVATE
+  NdrProxyForwardingFunction10@0 @38 PRIVATE
+  NdrProxyForwardingFunction11@0 @39 PRIVATE
+  NdrProxyForwardingFunction12@0 @40 PRIVATE
+  NdrProxyForwardingFunction13@0 @41 PRIVATE
+  NdrProxyForwardingFunction14@0 @42 PRIVATE
+  NdrProxyForwardingFunction15@0 @43 PRIVATE
+  NdrProxyForwardingFunction16@0 @44 PRIVATE
+  NdrProxyForwardingFunction17@0 @45 PRIVATE
+  NdrProxyForwardingFunction18@0 @46 PRIVATE
+  NdrProxyForwardingFunction19@0 @47 PRIVATE
+  NdrProxyForwardingFunction20@0 @48 PRIVATE
+  NdrProxyForwardingFunction21@0 @49 PRIVATE
+  NdrProxyForwardingFunction22@0 @50 PRIVATE
+  NdrProxyForwardingFunction23@0 @51 PRIVATE
+  NdrProxyForwardingFunction24@0 @52 PRIVATE
+  NdrProxyForwardingFunction25@0 @53 PRIVATE
+  NdrProxyForwardingFunction26@0 @54 PRIVATE
+  NdrProxyForwardingFunction27@0 @55 PRIVATE
+  NdrProxyForwardingFunction28@0 @56 PRIVATE
+  NdrProxyForwardingFunction29@0 @57 PRIVATE
+  NdrProxyForwardingFunction30@0 @58 PRIVATE
+  NdrProxyForwardingFunction31@0 @59 PRIVATE
+  NdrProxyForwardingFunction32@0 @60 PRIVATE
+  NdrOleInitializeExtension@0 @61 PRIVATE
+  RoFailFastWithErrorContextInternal2@0 @62 PRIVATE
+  RoFailFastWithErrorContextInternal@0 @63 PRIVATE
+  UpdateProcessTracing@0 @64 PRIVATE
+  CLIPFORMAT_UserFree@8 @65
+  CLIPFORMAT_UserMarshal@12 @66
+  CLIPFORMAT_UserSize@12 @67
+  CLIPFORMAT_UserUnmarshal@12 @68
+  CLSIDFromOle1Class@0 @69 PRIVATE
+  CLSIDFromProgID@8 @70
+  CLSIDFromProgIDEx@8 @71
+  CLSIDFromString@8 @72
+  CleanupOleStateInAllTls@0 @73 PRIVATE
+  CleanupTlsOleState@4 @74
+  ClearCleanupFlag@0 @75 PRIVATE
+  CoAddRefServerProcess@0 @76
+  CoAllowUnmarshalerCLSID@0 @77 PRIVATE
+  CoCancelCall@0 @78 PRIVATE
+  CoCopyProxy@8 @79
+  CoCreateErrorInfo@4=CreateErrorInfo @80
+  CoCreateFreeThreadedMarshaler@8 @81
+  CoCreateGuid@4 @82
+  CoCreateInstance@20 @83
+  CoCreateInstanceEx@24 @84
+  CoCreateInstanceFromApp@24 @85
+  CoCreateObjectInContext@0 @86 PRIVATE
+  CoDeactivateObject@0 @87 PRIVATE
+  CoDecodeProxy@0 @88 PRIVATE
+  CoDecrementMTAUsage@4 @89
+  CoDisableCallCancellation@4 @90
+  CoDisconnectContext@0 @91 PRIVATE
+  CoDisconnectObject@8 @92
+  CoEnableCallCancellation@4 @93
+  CoFileTimeNow@4 @94
+  CoFreeUnusedLibraries@0 @95
+  CoFreeUnusedLibrariesEx@8 @96
+  CoGetActivationState@24 @97
+  CoGetApartmentID@0 @98 PRIVATE
+  CoGetApartmentType@8 @99
+  CoGetCallContext@8 @100
+  CoGetCallState@8 @101
+  CoGetCallerTID@4 @102
+  CoGetCancelObject@0 @103 PRIVATE
+  CoGetClassObject@20 @104
+  CoGetClassVersion@0 @105 PRIVATE
+  CoGetContextToken@4 @106
+  CoGetCurrentLogicalThreadId@4 @107
+  CoGetCurrentProcess@0 @108
+  CoGetDefaultContext@12 @109
+  CoGetErrorInfo@8=GetErrorInfo @110
+  CoGetInstanceFromFile@32 @111
+  CoGetInstanceFromIStorage@28 @112
+  CoGetInterfaceAndReleaseStream@12 @113
+  CoGetMalloc@8 @114
+  CoGetMarshalSizeMax@24 @115
+  CoGetModuleType@0 @116 PRIVATE
+  CoGetObjectContext@8 @117
+  CoGetPSClsid@8 @118
+  CoGetProcessIdentifier@0 @119 PRIVATE
+  CoGetStandardMarshal@24 @120
+  CoGetStdMarshalEx@0 @121 PRIVATE
+  CoGetSystemSecurityPermissions@0 @122 PRIVATE
+  CoGetTreatAsClass@8 @123
+  CoImpersonateClient@0 @124
+  CoIncrementMTAUsage@4 @125
+  CoInitializeEx@8 @126
+  CoInitializeSecurity@36 @127
+  CoInitializeWOW@8 @128
+  CoInvalidateRemoteMachineBindings@0 @129 PRIVATE
+  CoIsHandlerConnected@4 @130
+  CoLockObjectExternal@12 @131
+  CoMarshalHresult@8 @132
+  CoMarshalInterThreadInterfaceInStream@12 @133
+  CoMarshalInterface@24 @134
+  CoPopServiceDomain@0 @135 PRIVATE
+  CoPushServiceDomain@0 @136 PRIVATE
+  CoQueryAuthenticationServices@0 @137 PRIVATE
+  CoQueryClientBlanket@28 @138
+  CoQueryProxyBlanket@32 @139
+  CoReactivateObject@0 @140 PRIVATE
+  CoRegisterActivationFilter@0 @141 PRIVATE
+  CoRegisterChannelHook@8 @142
+  CoRegisterClassObject@20 @143
+  CoRegisterInitializeSpy@8 @144
+  CoRegisterMallocSpy@4 @145
+  CoRegisterMessageFilter@8 @146
+  CoRegisterPSClsid@8 @147
+  CoRegisterSurrogate@4 @148
+  CoRegisterSurrogateEx@8 @149
+  CoReleaseMarshalData@4 @150
+  CoReleaseServerProcess@0 @151
+  CoResumeClassObjects@0 @152
+  CoRetireServer@0 @153 PRIVATE
+  CoRevertToSelf@0 @154
+  CoRevokeClassObject@4 @155
+  CoRevokeInitializeSpy@8 @156
+  CoRevokeMallocSpy@0 @157
+  CoSetCancelObject@0 @158 PRIVATE
+  CoSetErrorInfo@8=SetErrorInfo @159
+  CoSetProxyBlanket@32 @160
+  CoSuspendClassObjects@0 @161
+  CoSwitchCallContext@8 @162
+  CoTaskMemAlloc@4 @163
+  CoTaskMemFree@4 @164
+  CoTaskMemRealloc@8 @165
+  CoTestCancel@0 @166 PRIVATE
+  CoUninitialize@0 @167
+  CoUnloadingWOW@0 @168 PRIVATE
+  CoUnmarshalHresult@8 @169
+  CoUnmarshalInterface@12 @170
+  CoVrfCheckThreadState@0 @171 PRIVATE
+  CoVrfGetThreadState@0 @172 PRIVATE
+  CoVrfReleaseThreadState@0 @173 PRIVATE
+  CoWaitForMultipleHandles@20 @174
+  CoWaitForMultipleObjects@0 @175 PRIVATE
+  CreateErrorInfo@4 @176
+  CreateStreamOnHGlobal@12 @177
+  DcomChannelSetHResult@0 @178 PRIVATE
+  DllDebugObjectRPCHook@8 @179
+  DllGetActivationFactory@8 @180
+  DllGetClassObject@12=ole32.DllGetClassObject @181 PRIVATE
+  EnableHookObject@0 @182 PRIVATE
+  FreePropVariantArray@8 @183
+  FreePropVariantArrayWorker@0 @184 PRIVATE
+  GetCatalogHelper@0 @185 PRIVATE
+  GetErrorInfo@8 @186
+  GetFuncDescs@0 @187 PRIVATE
+  GetHGlobalFromStream@8 @188
+  GetHookInterface@0 @189 PRIVATE
+  GetRestrictedErrorInfo@4 @190
+  HACCEL_UserFree@8 @191
+  HACCEL_UserMarshal@12 @192
+  HACCEL_UserSize@12 @193
+  HACCEL_UserUnmarshal@12 @194
+  HBITMAP_UserFree@8 @195
+  HBITMAP_UserMarshal@12 @196
+  HBITMAP_UserSize@12 @197
+  HBITMAP_UserUnmarshal@12 @198
+  HBRUSH_UserFree@8 @199
+  HBRUSH_UserMarshal@12 @200
+  HBRUSH_UserSize@12 @201
+  HBRUSH_UserUnmarshal@12 @202
+  HDC_UserFree@8 @203
+  HDC_UserMarshal@12 @204
+  HDC_UserSize@12 @205
+  HDC_UserUnmarshal@12 @206
+  HGLOBAL_UserFree@8 @207
+  HGLOBAL_UserMarshal@12 @208
+  HGLOBAL_UserSize@12 @209
+  HGLOBAL_UserUnmarshal@12 @210
+  HICON_UserFree@8 @211
+  HICON_UserMarshal@12 @212
+  HICON_UserSize@12 @213
+  HICON_UserUnmarshal@12 @214
+  HMENU_UserFree@8 @215
+  HMENU_UserMarshal@12 @216
+  HMENU_UserSize@12 @217
+  HMENU_UserUnmarshal@12 @218
+  HPALETTE_UserFree@8 @219
+  HPALETTE_UserMarshal@12 @220
+  HPALETTE_UserSize@12 @221
+  HPALETTE_UserUnmarshal@12 @222
+  HSTRING_UserFree@0 @223 PRIVATE
+  HSTRING_UserMarshal@0 @224 PRIVATE
+  HSTRING_UserSize@0 @225 PRIVATE
+  HSTRING_UserUnmarshal@0 @226 PRIVATE
+  HWND_UserFree@8 @227
+  HWND_UserMarshal@12 @228
+  HWND_UserSize@12 @229
+  HWND_UserUnmarshal@12 @230
+  HkOleRegisterObject@0 @231 PRIVATE
+  IIDFromString@8 @232
+  InternalAppInvokeExceptionFilter@0 @233 PRIVATE
+  InternalCCFreeUnused@0 @234 PRIVATE
+  InternalCCGetClassInformationForDde@0 @235 PRIVATE
+  InternalCCGetClassInformationFromKey@0 @236 PRIVATE
+  InternalCCSetDdeServerWindow@0 @237 PRIVATE
+  InternalCMLSendReceive@0 @238 PRIVATE
+  InternalCallAsProxyExceptionFilter@0 @239 PRIVATE
+  InternalCallFrameExceptionFilter@0 @240 PRIVATE
+  InternalCallerIsAppContainer@0 @241 PRIVATE
+  InternalCanMakeOutCall@0 @242 PRIVATE
+  InternalCoIsSurrogateProcess@0 @243 PRIVATE
+  InternalCoRegisterDisconnectCallback@0 @244 PRIVATE
+  InternalCoRegisterSurrogatedObject@0 @245 PRIVATE
+  InternalCoStdMarshalObject@16 @246
+  InternalCoUnregisterDisconnectCallback@0 @247 PRIVATE
+  InternalCompleteObjRef@0 @248 PRIVATE
+  InternalCreateCAggId@0 @249 PRIVATE
+  InternalCreateIdentityHandler@0 @250 PRIVATE
+  InternalDoATClassCreate@0 @251 PRIVATE
+  InternalFillLocalOXIDInfo@0 @252 PRIVATE
+  InternalFreeObjRef@0 @253 PRIVATE
+  InternalGetWindowPropInterface@0 @254 PRIVATE
+  InternalIrotEnumRunning@4 @255
+  InternalIrotGetObject@12 @256
+  InternalIrotGetTimeOfLastChange@8 @257
+  InternalIrotIsRunning@4 @258
+  InternalIrotNoteChangeTime@8 @259
+  InternalIrotRegister@28 @260
+  InternalIrotRevoke@16 @261
+  InternalIsApartmentInitialized@0 @262 PRIVATE
+  InternalIsProcessInitialized@0 @263
+  InternalMarshalObjRef@0 @264 PRIVATE
+  InternalNotifyDDStartOrStop@0 @265 PRIVATE
+  InternalOleModalLoopBlockFn@0 @266 PRIVATE
+  InternalRegisterWindowPropInterface@0 @267 PRIVATE
+  InternalReleaseMarshalObjRef@0 @268 PRIVATE
+  InternalSTAInvoke@0 @269 PRIVATE
+  InternalServerExceptionFilter@0 @270 PRIVATE
+  InternalSetAptCallCtrlOnTlsIfRequired@0 @271 PRIVATE
+  InternalSetOleThunkWowPtr@0 @272 PRIVATE
+  InternalStubInvoke@0 @273 PRIVATE
+  InternalTlsAllocData@4 @274
+  InternalUnmarshalObjRef@0 @275 PRIVATE
+  IsErrorPropagationEnabled@0 @276 PRIVATE
+  NdrExtStubInitialize@0 @277 PRIVATE
+  NdrOleDllGetClassObject@0 @278 PRIVATE
+  NdrpFindInterface@0 @279 PRIVATE
+  ProgIDFromCLSID@8 @280
+  PropVariantClear@4 @281
+  PropVariantCopy@8 @282
+  ReleaseFuncDescs@0 @283 PRIVATE
+  RoActivateInstance@8 @284
+  RoCaptureErrorContext@0 @285 PRIVATE
+  RoClearError@0 @286 PRIVATE
+  RoFailFastWithErrorContext@0 @287 PRIVATE
+  RoFreeParameterizedTypeExtra@0 @288 PRIVATE
+  RoGetActivatableClassRegistration@0 @289 PRIVATE
+  RoGetActivationFactory@12 @290
+  RoGetAgileReference@0 @291 PRIVATE
+  RoGetApartmentIdentifier@4 @292
+  RoGetErrorReportingFlags@0 @293 PRIVATE
+  RoGetMatchingRestrictedErrorInfo@0 @294 PRIVATE
+  RoGetParameterizedTypeInstanceIID@20 @295
+  RoGetServerActivatableClasses@12 @296
+  RoInitialize@4 @297
+  RoInspectCapturedStackBackTrace@0 @298 PRIVATE
+  RoInspectThreadErrorInfo@0 @299 PRIVATE
+  RoOriginateError@0 @300 PRIVATE
+  RoOriginateErrorW@0 @301 PRIVATE
+  RoOriginateLanguageException@12 @302
+  RoParameterizedTypeExtraGetTypeSignature@0 @303 PRIVATE
+  RoRegisterActivationFactories@16 @304
+  RoRegisterForApartmentShutdown@12 @305
+  RoReportCapabilityCheckFailure@0 @306 PRIVATE
+  RoReportFailedDelegate@0 @307 PRIVATE
+  RoReportUnhandledError@0 @308 PRIVATE
+  RoResolveRestrictedErrorInfoReference@0 @309 PRIVATE
+  RoRevokeActivationFactories@0 @310 PRIVATE
+  RoSetErrorReportingFlags@0 @311 PRIVATE
+  RoTransformError@0 @312 PRIVATE
+  RoTransformErrorW@0 @313 PRIVATE
+  RoUninitialize@0 @314
+  RoUnregisterForApartmentShutdown@0 @315 PRIVATE
+  SetCleanupFlag@0 @316 PRIVATE
+  SetErrorInfo@8 @317
+  SetRestrictedErrorInfo@0 @318 PRIVATE
+  StringFromCLSID@8 @319
+  StringFromGUID2@12 @320
+  StringFromIID@8=StringFromCLSID @321
+  UpdateDCOMSettings@0 @322 PRIVATE
+  WdtpInterfacePointer_UserFree@4 @323
+  WdtpInterfacePointer_UserMarshal@20 @324
+  WdtpInterfacePointer_UserSize@20 @325
+  WdtpInterfacePointer_UserUnmarshal@16 @326
+  WindowsCompareStringOrdinal@12 @327
+  WindowsConcatString@12 @328
+  WindowsCreateString@12 @329
+  WindowsCreateStringReference@16 @330
+  WindowsDeleteString@4 @331
+  WindowsDeleteStringBuffer@4 @332
+  WindowsDuplicateString@8 @333
+  WindowsGetStringLen@4 @334
+  WindowsGetStringRawBuffer@8 @335
+  WindowsInspectString@0 @336 PRIVATE
+  WindowsIsStringEmpty@4 @337
+  WindowsPreallocateStringBuffer@12 @338
+  WindowsPromoteStringBuffer@8 @339
+  WindowsReplaceString@0 @340 PRIVATE
+  WindowsStringHasEmbeddedNull@8 @341
+  WindowsSubstring@12 @342
+  WindowsSubstringWithSpecifiedLength@16 @343
+  WindowsTrimStringEnd@12 @344
+  WindowsTrimStringStart@12 @345

@@ -30,7 +30,7 @@ NICE_NAME=$(echo $(echo "$NAME" | sed 's/[A-Z]/ \0/g'))
 DOT_NAME=$(echo "$NICE_NAME" | tr " " . )
 WINEEXE="/app/bin/wine"
 ARCH="x86_64"
-WINEVERSION="wine32_6.0_fw32"
+WINEVERSION="wine32-6.0-flatpak-wine32"
 
 #Output
 echo "2.  Creating new target directory	[x]"
@@ -161,7 +161,7 @@ cat << EOF >target/\[winepak32\]$DOT_NAME/install.sh
 DIR=\$(dirname "\$0")
 set -ex
 flatpak --user remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo || true
-flatpak --user install -y --app --bundle "\$DIR/$NAME.flatpak" || echo "Installation failed. Check if you have Flatpak properly configured. See http://flatpak.org/ for more info."
+flatpak --user install -y --app --bundle "\$DIR/org.winepak32.$NAME.flatpak" || echo "Installation failed. Check if you have Flatpak properly configured. See http://flatpak.org/ for more info."
 EOF
 
 echo "6.  Creating flatpak uninstall script	[x]"
@@ -173,7 +173,7 @@ echo You can as well use package manager to uninstall the game
 set -ex
 flatpak --user uninstall org.winepak32.$NAME
 EOF
-
+ 
 echo "7.  Creating flatpak run script		[x]"
 cat << EOF >target/\[winepak32\]$DOT_NAME/run.sh
 #!/bin/bash

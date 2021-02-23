@@ -1,0 +1,88 @@
+; File generated automatically from ../dlls/shcore/shcore.spec; do not edit!
+
+LIBRARY shcore.dll
+
+EXPORTS
+  CommandLineToArgvW@8 @2
+  CreateRandomAccessStreamOnFile@0 @3 PRIVATE
+  CreateRandomAccessStreamOverStream@0 @4 PRIVATE
+  CreateStreamOverRandomAccessStream@0 @5 PRIVATE
+  DllCanUnloadNow@0 @6 PRIVATE
+  DllGetActivationFactory@0 @7 PRIVATE
+  DllGetClassObject@0 @8 PRIVATE
+  GetCurrentProcessExplicitAppUserModelID@4 @9
+  GetDpiForMonitor@16 @10
+  GetDpiForShellUIComponent@0 @11 PRIVATE
+  GetProcessDpiAwareness@8 @12
+  GetProcessReference@4 @13
+  GetScaleFactorForDevice@4 @14
+  GetScaleFactorForMonitor@8 @15
+  IStream_Copy@0 @16 PRIVATE
+  IStream_Read@12=_IStream_Read @17
+  IStream_ReadStr@0 @18 PRIVATE
+  IStream_Reset@4 @19
+  IStream_Size@8 @20
+  IStream_Write@12=_IStream_Write @21
+  IStream_WriteStr@0 @22 PRIVATE
+  IUnknown_AtomicRelease@4 @23
+  IUnknown_GetSite@12 @24
+  IUnknown_QueryService@16 @25
+  IUnknown_Set@8 @26
+  IUnknown_SetSite@8 @27
+  IsOS@4 @28
+  RegisterScaleChangeEvent@0 @29 PRIVATE
+  RegisterScaleChangeNotifications@0 @30 PRIVATE
+  RevokeScaleChangeNotifications@0 @31 PRIVATE
+  SHAnsiToAnsi@12 @32
+  SHAnsiToUnicode@12 @33
+  SHCopyKeyA@16 @34
+  SHCopyKeyW@16 @35
+  SHCreateMemStream@8 @36
+  SHCreateStreamOnFileA@12 @37
+  SHCreateStreamOnFileEx@24 @38
+  SHCreateStreamOnFileW@12 @39
+  SHCreateThread@16 @40
+  SHCreateThreadRef@8 @41
+  SHCreateThreadWithHandle@0 @42 PRIVATE
+  SHDeleteEmptyKeyA@8 @43
+  SHDeleteEmptyKeyW@8 @44
+  SHDeleteKeyA@8 @45
+  SHDeleteKeyW@8 @46
+  SHDeleteValueA@12 @47
+  SHDeleteValueW@12 @48
+  SHEnumKeyExA@16 @49
+  SHEnumKeyExW@16 @50
+  SHEnumValueA@28 @51
+  SHEnumValueW@28 @52
+  SHGetThreadRef@4 @53
+  SHGetValueA@24 @54
+  SHGetValueW@24 @55
+  SHOpenRegStream2A@16 @56
+  SHOpenRegStream2W@16 @57
+  SHOpenRegStreamA@16 @58
+  SHOpenRegStreamW@16 @59
+  SHQueryInfoKeyA@20 @60
+  SHQueryInfoKeyW@20 @61
+  SHQueryValueExA@24 @62
+  SHQueryValueExW@24 @63
+  SHRegDuplicateHKey@4 @64
+  SHRegGetIntW@12 @65
+  SHRegGetPathA@20 @66
+  SHRegGetPathW@20 @67
+  SHRegGetValueA@28=advapi32.RegGetValueA @68
+  SHRegGetValueW@28=advapi32.RegGetValueW @69
+  SHRegSetPathA@20 @70
+  SHRegSetPathW@20 @71
+  SHReleaseThreadRef@0 @72
+  SHSetThreadRef@4 @73
+  SHSetValueA@24 @74
+  SHSetValueW@24 @75
+  SHStrDupA@8 @76
+  SHStrDupW@8 @77
+  SHUnicodeToAnsi@12 @78
+  SHUnicodeToUnicode@12 @79
+  SetCurrentProcessExplicitAppUserModelID@4 @80
+  SetProcessDpiAwareness@4 @81
+  SetProcessReference@4 @82
+  UnregisterScaleChangeEvent@0 @83 PRIVATE
+  SHRegGetValueFromHKCUHKLM@0 @122 PRIVATE

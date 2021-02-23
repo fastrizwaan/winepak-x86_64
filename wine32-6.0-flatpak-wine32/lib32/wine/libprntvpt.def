@@ -1,0 +1,32 @@
+; File generated automatically from ../dlls/prntvpt/prntvpt.spec; do not edit!
+
+LIBRARY prntvpt.dll
+
+EXPORTS
+  PTQuerySchemaVersionSupport@8 @1
+  PTOpenProvider@12 @2
+  PTOpenProviderEx@20 @3
+  PTCloseProvider@4 @4
+  BindPTProviderThunk@0 @5 PRIVATE
+  PTGetPrintCapabilities@16 @6
+  PTMergeAndValidatePrintTicket@24 @7
+  PTConvertPrintTicketToDevMode@28 @8
+  PTConvertDevModeToPrintTicket@20 @9
+  PTReleaseMemory@4 @10
+  ConvertDevModeToPrintTicketThunk2@0 @11 PRIVATE
+  ConvertDevModeToPrintTicketThunk@0 @12 PRIVATE
+  ConvertPrintTicketToDevModeThunk2@0 @13 PRIVATE
+  ConvertPrintTicketToDevModeThunk@0 @14 PRIVATE
+  DllCanUnloadNow@0 @15 PRIVATE
+  DllGetClassObject@0 @16 PRIVATE
+  DllMain@12 @17 PRIVATE
+  DllRegisterServer@0 @18 PRIVATE
+  DllUnregisterServer@0 @19 PRIVATE
+  GetDeviceDefaultPrintTicketThunk@0 @20 PRIVATE
+  GetDeviceNamespacesThunk@0 @21 PRIVATE
+  GetPrintCapabilitiesThunk2@0 @22 PRIVATE
+  GetPrintCapabilitiesThunk@0 @23 PRIVATE
+  GetSchemaVersionThunk@0 @24 PRIVATE
+  MergeAndValidatePrintTicketThunk2@0 @25 PRIVATE
+  MergeAndValidatePrintTicketThunk@0 @26 PRIVATE
+  UnbindPTProviderThunk@0 @27 PRIVATE
