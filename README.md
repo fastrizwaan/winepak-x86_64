@@ -1,5 +1,6 @@
 # winepak32
-Flatpak bundle with Wine 32 bit with Flatpak Sdk 20.08 with Compat.i386 runtime
+Create Windows 32 bit Games and 32 bit Applications Flatpak bundles with Wine 32 bit included in the bundle. we can create a Game.flatpak bundle which includes Game+Wine+game run script.
+winepak32 is uses Flatpak Sdk 20.08 with Compat.i386 runtime
 
 ## Build wine 32 flatpak bundle
 ```
