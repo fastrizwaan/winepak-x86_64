@@ -16,6 +16,12 @@ org.freedesktop.Platform.Compat.i386/x86_64/20.08                  \
 org.freedesktop.Platform.GL32.default/x86_64/20.08
 
 ```
+#### if you have nvidia gpu, and the game complains about D3D or Opengl or GL install nvidia drivers install nvidia drivers 
+```
+NVERSION=$(nvidia-settings -q all |grep OpenGLVersion|grep NVIDIA|sed 's/.*NVIDIA \(.*\) /nvidia-\1/g'|sed 's/\./-/g')
+
+sudo flatpak install flathub org.freedesktop.Platform.GL32.$NVERSION -y
+```
 
 ## Create wine32 flatpak bundle
 ```
