@@ -1,0 +1,306 @@
+; File generated automatically from ../dlls/ole32/ole32.spec; do not edit!
+
+LIBRARY ole32.dll
+
+EXPORTS
+  BindMoniker@16 @1
+  CLIPFORMAT_UserFree@8=combase.CLIPFORMAT_UserFree @2
+  CLIPFORMAT_UserMarshal@12=combase.CLIPFORMAT_UserMarshal @3
+  CLIPFORMAT_UserSize@12=combase.CLIPFORMAT_UserSize @4
+  CLIPFORMAT_UserUnmarshal@12=combase.CLIPFORMAT_UserUnmarshal @5
+  CLSIDFromProgID@8=combase.CLSIDFromProgID @6
+  CLSIDFromProgIDEx@8=combase.CLSIDFromProgIDEx @7
+  CLSIDFromString@8=combase.CLSIDFromString @8
+  CoAddRefServerProcess@0=combase.CoAddRefServerProcess @9
+  CoAllowSetForegroundWindow@8 @10
+  CoBuildVersion@0 @11
+  CoCopyProxy@8=combase.CoCopyProxy @12
+  CoCreateFreeThreadedMarshaler@8=combase.CoCreateFreeThreadedMarshaler @13
+  CoCreateGuid@4=combase.CoCreateGuid @14
+  CoCreateInstance@20=combase.CoCreateInstance @15
+  CoCreateInstanceEx@24=combase.CoCreateInstanceEx @16
+  CoCreateInstanceFromApp@24=combase.CoCreateInstanceFromApp @17
+  CoDecrementMTAUsage@4=combase.CoDecrementMTAUsage @18
+  CoDisableCallCancellation@4=combase.CoDisableCallCancellation @19
+  CoDisconnectObject@8=combase.CoDisconnectObject @20
+  CoDosDateTimeToFileTime@12=kernel32.DosDateTimeToFileTime @21
+  CoEnableCallCancellation@4=combase.CoEnableCallCancellation @22
+  CoFileTimeNow@4=combase.CoFileTimeNow @23
+  CoFileTimeToDosDateTime@12=kernel32.FileTimeToDosDateTime @24
+  CoFreeAllLibraries@0 @25
+  CoFreeLibrary@4 @26
+  CoFreeUnusedLibraries@0=combase.CoFreeUnusedLibraries @27
+  CoFreeUnusedLibrariesEx@8=combase.CoFreeUnusedLibrariesEx @28
+  CoGetActivationState@24=combase.CoGetActivationState @29
+  CoGetApartmentType@8=combase.CoGetApartmentType @30
+  CoGetCallContext@8=combase.CoGetCallContext @31
+  CoGetCallState@8=combase.CoGetCallState @32
+  CoGetCallerTID@4=combase.CoGetCallerTID @33
+  CoGetClassObject@20=combase.CoGetClassObject @34
+  CoGetContextToken@4=combase.CoGetContextToken @35
+  CoGetCurrentLogicalThreadId@4=combase.CoGetCurrentLogicalThreadId @36
+  CoGetCurrentProcess@0=combase.CoGetCurrentProcess @37
+  CoGetDefaultContext@12=combase.CoGetDefaultContext @38
+  CoGetInstanceFromFile@32=combase.CoGetInstanceFromFile @39
+  CoGetInstanceFromIStorage@28=combase.CoGetInstanceFromIStorage @40
+  CoGetInterfaceAndReleaseStream@12=combase.CoGetInterfaceAndReleaseStream @41
+  CoGetMalloc@8=combase.CoGetMalloc @42
+  CoGetMarshalSizeMax@24=combase.CoGetMarshalSizeMax @43
+  CoGetObject@16 @44
+  CoGetObjectContext@8=combase.CoGetObjectContext @45
+  CoGetPSClsid@8=combase.CoGetPSClsid @46
+  CoGetStandardMarshal@24=combase.CoGetStandardMarshal @47
+  CoGetState@4 @48
+  CoGetTIDFromIPID@0 @49 PRIVATE
+  CoGetTreatAsClass@8=combase.CoGetTreatAsClass @50
+  CoImpersonateClient@0=combase.CoImpersonateClient @51
+  CoIncrementMTAUsage@4=combase.CoIncrementMTAUsage @52
+  CoInitialize@4 @53
+  CoInitializeEx@8=combase.CoInitializeEx @54
+  CoInitializeSecurity@36=combase.CoInitializeSecurity @55
+  CoInitializeWOW@8=combase.CoInitializeWOW @56
+  CoIsHandlerConnected@4=combase.CoIsHandlerConnected @57
+  CoIsOle1Class@4 @58
+  CoLoadLibrary@8 @59
+  CoLockObjectExternal@12=combase.CoLockObjectExternal @60
+  CoMarshalHresult@8=combase.CoMarshalHresult @61
+  CoMarshalInterThreadInterfaceInStream@12=combase.CoMarshalInterThreadInterfaceInStream @62
+  CoMarshalInterface@24=combase.CoMarshalInterface @63
+  CoQueryAuthenticationServices@0 @64 PRIVATE
+  CoQueryClientBlanket@28=combase.CoQueryClientBlanket @65
+  CoQueryProxyBlanket@32=combase.CoQueryProxyBlanket @66
+  CoQueryReleaseObject@0 @67 PRIVATE
+  CoRegisterChannelHook@8=combase.CoRegisterChannelHook @68
+  CoRegisterClassObject@20=combase.CoRegisterClassObject @69
+  CoRegisterInitializeSpy@8=combase.CoRegisterInitializeSpy @70
+  CoRegisterMallocSpy@4=combase.CoRegisterMallocSpy @71
+  CoRegisterMessageFilter@8=combase.CoRegisterMessageFilter @72
+  CoRegisterPSClsid@8=combase.CoRegisterPSClsid @73
+  CoRegisterSurrogate@4=combase.CoRegisterSurrogate @74
+  CoRegisterSurrogateEx@8=combase.CoRegisterSurrogateEx @75
+  CoReleaseMarshalData@4=combase.CoReleaseMarshalData @76
+  CoReleaseServerProcess@0=combase.CoReleaseServerProcess @77
+  CoResumeClassObjects@0=combase.CoResumeClassObjects @78
+  CoRevertToSelf@0=combase.CoRevertToSelf @79
+  CoRevokeClassObject@4=combase.CoRevokeClassObject @80
+  CoRevokeInitializeSpy@8=combase.CoRevokeInitializeSpy @81
+  CoRevokeMallocSpy@0=combase.CoRevokeMallocSpy @82
+  CoSetProxyBlanket@32=combase.CoSetProxyBlanket @83
+  CoSetState@4 @84
+  CoSuspendClassObjects@0=combase.CoSuspendClassObjects @85
+  CoSwitchCallContext@8=combase.CoSwitchCallContext @86
+  CoTaskMemAlloc@4=combase.CoTaskMemAlloc @87
+  CoTaskMemFree@4=combase.CoTaskMemFree @88
+  CoTaskMemRealloc@8=combase.CoTaskMemRealloc @89
+  CoTreatAsClass@8 @90
+  CoUninitialize@0=combase.CoUninitialize @91
+  CoUnloadingWOW@0 @92 PRIVATE
+  CoUnmarshalHresult@8=combase.CoUnmarshalHresult @93
+  CoUnmarshalInterface@12=combase.CoUnmarshalInterface @94
+  CoWaitForMultipleHandles@20=combase.CoWaitForMultipleHandles @95
+  CreateAntiMoniker@4 @96
+  CreateBindCtx@8 @97
+  CreateClassMoniker@8 @98
+  CreateDataAdviseHolder@4 @99
+  CreateDataCache@16 @100
+  CreateErrorInfo@4=combase.CreateErrorInfo @101
+  CreateFileMoniker@8 @102
+  CreateGenericComposite@12 @103
+  CreateILockBytesOnHGlobal@12 @104
+  CreateItemMoniker@12 @105
+  CreateObjrefMoniker@0 @106 PRIVATE
+  CreateOleAdviseHolder@4 @107
+  CreatePointerMoniker@8 @108
+  CreateStreamOnHGlobal@12=combase.CreateStreamOnHGlobal @109
+  DestroyRunningObjectTable@0 @110
+  DllDebugObjectRPCHook@8=combase.DllDebugObjectRPCHook @111
+  DllGetClassObject@12 @112 PRIVATE
+  DllGetClassObjectWOW@0 @113 PRIVATE
+  DllRegisterServer@0 @114 PRIVATE
+  DllUnregisterServer@0 @115 PRIVATE
+  DoDragDrop@16 @116
+  EnableHookObject@0 @117 PRIVATE
+  FmtIdToPropStgName@8 @118
+  FreePropVariantArray@8=combase.FreePropVariantArray @119
+  GetClassFile@8 @120
+  GetConvertStg@4 @121
+  GetDocumentBitStg@0 @122 PRIVATE
+  GetErrorInfo@8=combase.GetErrorInfo @123
+  GetHGlobalFromILockBytes@8 @124
+  GetHGlobalFromStream@8=combase.GetHGlobalFromStream @125
+  GetHookInterface@0 @126 PRIVATE
+  GetRunningObjectTable@8 @127
+  HACCEL_UserFree@8=combase.HACCEL_UserFree @128
+  HACCEL_UserMarshal@12=combase.HACCEL_UserMarshal @129
+  HACCEL_UserSize@12=combase.HACCEL_UserSize @130
+  HACCEL_UserUnmarshal@12=combase.HACCEL_UserUnmarshal @131
+  HBITMAP_UserFree@8=combase.HBITMAP_UserFree @132
+  HBITMAP_UserMarshal@12=combase.HBITMAP_UserMarshal @133
+  HBITMAP_UserSize@12=combase.HBITMAP_UserSize @134
+  HBITMAP_UserUnmarshal@12=combase.HBITMAP_UserUnmarshal @135
+  HBRUSH_UserFree@8=combase.HBRUSH_UserFree @136
+  HBRUSH_UserMarshal@12=combase.HBRUSH_UserMarshal @137
+  HBRUSH_UserSize@12=combase.HBRUSH_UserSize @138
+  HBRUSH_UserUnmarshal@12=combase.HBRUSH_UserUnmarshal @139
+  HDC_UserFree@8=combase.HDC_UserFree @140
+  HDC_UserMarshal@12=combase.HDC_UserMarshal @141
+  HDC_UserSize@12=combase.HDC_UserSize @142
+  HDC_UserUnmarshal@12=combase.HDC_UserUnmarshal @143
+  HENHMETAFILE_UserFree@8 @144
+  HENHMETAFILE_UserMarshal@12 @145
+  HENHMETAFILE_UserSize@12 @146
+  HENHMETAFILE_UserUnmarshal@12 @147
+  HGLOBAL_UserFree@8=combase.HGLOBAL_UserFree @148
+  HGLOBAL_UserMarshal@12=combase.HGLOBAL_UserMarshal @149
+  HGLOBAL_UserSize@12=combase.HGLOBAL_UserSize @150
+  HGLOBAL_UserUnmarshal@12=combase.HGLOBAL_UserUnmarshal @151
+  HICON_UserFree@8=combase.HICON_UserFree @152
+  HICON_UserMarshal@12=combase.HICON_UserMarshal @153
+  HICON_UserSize@12=combase.HICON_UserSize @154
+  HICON_UserUnmarshal@12=combase.HICON_UserUnmarshal @155
+  HMENU_UserFree@8=combase.HMENU_UserFree @156
+  HMENU_UserMarshal@12=combase.HMENU_UserMarshal @157
+  HMENU_UserSize@12=combase.HMENU_UserSize @158
+  HMENU_UserUnmarshal@12=combase.HMENU_UserUnmarshal @159
+  HMETAFILEPICT_UserFree@8 @160
+  HMETAFILEPICT_UserMarshal@12 @161
+  HMETAFILEPICT_UserSize@12 @162
+  HMETAFILEPICT_UserUnmarshal@12 @163
+  HMETAFILE_UserFree@8 @164
+  HMETAFILE_UserMarshal@12 @165
+  HMETAFILE_UserSize@12 @166
+  HMETAFILE_UserUnmarshal@12 @167
+  HPALETTE_UserFree@8=combase.HPALETTE_UserFree @168
+  HPALETTE_UserMarshal@12=combase.HPALETTE_UserMarshal @169
+  HPALETTE_UserSize@12=combase.HPALETTE_UserSize @170
+  HPALETTE_UserUnmarshal@12=combase.HPALETTE_UserUnmarshal @171
+  HWND_UserFree@8=combase.HWND_UserFree @172
+  HWND_UserMarshal@12=combase.HWND_UserMarshal @173
+  HWND_UserSize@12=combase.HWND_UserSize @174
+  HWND_UserUnmarshal@12=combase.HWND_UserUnmarshal @175
+  IIDFromString@8=combase.IIDFromString @176
+  I_RemoteMain@0 @177 PRIVATE
+  IsAccelerator@16 @178
+  IsEqualGUID@8 @179
+  IsValidIid@0 @180 PRIVATE
+  IsValidInterface@4 @181
+  IsValidPtrIn@0 @182 PRIVATE
+  IsValidPtrOut@0 @183 PRIVATE
+  MkParseDisplayName@16 @184
+  MonikerCommonPrefixWith@12 @185
+  MonikerRelativePathTo@0 @186 PRIVATE
+  Ole32DllGetClassObject@12 @187
+  OleBuildVersion@0 @188
+  OleConvertIStorageToOLESTREAM@8 @189
+  OleConvertIStorageToOLESTREAMEx@0 @190 PRIVATE
+  OleConvertOLESTREAMToIStorage@12 @191
+  OleConvertOLESTREAMToIStorageEx@0 @192 PRIVATE
+  OleCreate@28 @193
+  OleCreateDefaultHandler@16 @194
+  OleCreateEmbeddingHelper@24 @195
+  OleCreateEx@0 @196 PRIVATE
+  OleCreateFromData@28 @197
+  OleCreateFromDataEx@48 @198
+  OleCreateFromFile@32 @199
+  OleCreateFromFileEx@52 @200
+  OleCreateLink@28 @201
+  OleCreateLinkEx@0 @202 PRIVATE
+  OleCreateLinkFromData@28 @203
+  OleCreateLinkFromDataEx@0 @204 PRIVATE
+  OleCreateLinkToFile@28 @205
+  OleCreateLinkToFileEx@0 @206 PRIVATE
+  OleCreateMenuDescriptor@8 @207
+  OleCreateStaticFromData@28 @208
+  OleDestroyMenuDescriptor@4 @209
+  OleDoAutoConvert@8 @210
+  OleDraw@16 @211
+  OleDuplicateData@12 @212
+  OleFlushClipboard@0 @213
+  OleGetAutoConvert@8 @214
+  OleGetClipboard@4 @215
+  OleGetIconOfClass@12 @216
+  OleGetIconOfFile@8 @217
+  OleInitialize@4 @218
+  OleInitializeWOW@8 @219
+  OleIsCurrentClipboard@4 @220
+  OleIsRunning@4 @221
+  OleLoad@16 @222
+  OleLoadFromStream@12 @223
+  OleLockRunning@12 @224
+  OleMetafilePictFromIconAndLabel@16 @225
+  OleNoteObjectVisible@8 @226
+  OleQueryCreateFromData@4 @227
+  OleQueryLinkFromData@4 @228
+  OleRegEnumFormatEtc@12 @229
+  OleRegEnumVerbs@8 @230
+  OleRegGetMiscStatus@12 @231
+  OleRegGetUserType@12 @232
+  OleRun@4 @233
+  OleSave@12 @234
+  OleSaveToStream@8 @235
+  OleSetAutoConvert@8 @236
+  OleSetClipboard@4 @237
+  OleSetContainedObject@8 @238
+  OleSetMenuDescriptor@20 @239
+  OleTranslateAccelerator@12 @240
+  OleUninitialize@0 @241
+  OpenOrCreateStream@0 @242 PRIVATE
+  ProgIDFromCLSID@8=combase.ProgIDFromCLSID @243
+  PropStgNameToFmtId@8 @244
+  PropSysAllocString@4 @245
+  PropSysFreeString@4 @246
+  PropVariantClear@4=combase.PropVariantClear @247
+  PropVariantCopy@8=combase.PropVariantCopy @248
+  ReadClassStg@8 @249
+  ReadClassStm@8 @250
+  ReadFmtUserTypeStg@12 @251
+  ReadOleStg@0 @252 PRIVATE
+  ReadStringStream@0 @253 PRIVATE
+  RegisterDragDrop@8 @254
+  ReleaseStgMedium@4 @255
+  RevokeDragDrop@4 @256
+  SNB_UserFree@8 @257
+  SNB_UserMarshal@12 @258
+  SNB_UserSize@12 @259
+  SNB_UserUnmarshal@12 @260
+  STGMEDIUM_UserFree@8 @261
+  STGMEDIUM_UserMarshal@12 @262
+  STGMEDIUM_UserSize@12 @263
+  STGMEDIUM_UserUnmarshal@12 @264
+  SetConvertStg@8 @265
+  SetDocumentBitStg@0 @266 PRIVATE
+  SetErrorInfo@8=combase.SetErrorInfo @267
+  StgConvertPropertyToVariant@16 @268
+  StgConvertVariantToProperty@28 @269
+  StgCreateDocfile@16 @270
+  StgCreateDocfileOnILockBytes@16 @271
+  StgCreatePropSetStg@12 @272
+  StgCreatePropStg@24 @273
+  StgCreateStorageEx@32 @274
+  StgGetIFillLockBytesOnFile@0 @275 PRIVATE
+  StgGetIFillLockBytesOnILockBytes@0 @276 PRIVATE
+  StgIsStorageFile@4 @277
+  StgIsStorageILockBytes@4 @278
+  StgOpenAsyncDocfileOnIFillLockBytes@0 @279 PRIVATE
+  StgOpenPropStg@20 @280
+  StgOpenStorage@24 @281
+  StgOpenStorageEx@32 @282
+  StgOpenStorageOnILockBytes@24 @283
+  StgSetTimes@16 @284
+  StringFromCLSID@8=combase.StringFromCLSID @285
+  StringFromGUID2@12=combase.StringFromGUID2 @286
+  StringFromIID@8=combase.StringFromIID @287
+  UpdateDCOMSettings@0 @288 PRIVATE
+  UtConvertDvtd16toDvtd32@0 @289 PRIVATE
+  UtConvertDvtd32toDvtd16@0 @290 PRIVATE
+  UtGetDvtd16Info@0 @291 PRIVATE
+  UtGetDvtd32Info@0 @292 PRIVATE
+  WdtpInterfacePointer_UserFree@4=combase.WdtpInterfacePointer_UserFree @293
+  WdtpInterfacePointer_UserMarshal@20=combase.WdtpInterfacePointer_UserMarshal @294
+  WdtpInterfacePointer_UserSize@20=combase.WdtpInterfacePointer_UserSize @295
+  WdtpInterfacePointer_UserUnmarshal@16=combase.WdtpInterfacePointer_UserUnmarshal @296
+  WriteClassStg@8 @297
+  WriteClassStm@8 @298
+  WriteFmtUserTypeStg@12 @299
+  WriteOleStg@0 @300 PRIVATE
+  WriteStringStream@0 @301 PRIVATE

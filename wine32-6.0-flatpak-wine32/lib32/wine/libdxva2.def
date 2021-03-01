@@ -1,0 +1,42 @@
+; File generated automatically from ../dlls/dxva2/dxva2.spec; do not edit!
+
+LIBRARY dxva2.dll
+
+EXPORTS
+  CapabilitiesRequestAndCapabilitiesReply@12 @1
+  DXVA2CreateDirect3DDeviceManager9@8 @2
+  DXVA2CreateVideoService@12 @3
+  DegaussMonitor@4 @4
+  DestroyPhysicalMonitor@4 @5
+  DestroyPhysicalMonitors@8 @6
+  GetCapabilitiesStringLength@8 @7
+  GetMonitorBrightness@16 @8
+  GetMonitorCapabilities@12 @9
+  GetMonitorColorTemperature@8 @10
+  GetMonitorContrast@16 @11
+  GetMonitorDisplayAreaPosition@20 @12
+  GetMonitorDisplayAreaSize@20 @13
+  GetMonitorRedGreenOrBlueDrive@20 @14
+  GetMonitorRedGreenOrBlueGain@20 @15
+  GetMonitorTechnologyType@8 @16
+  GetNumberOfPhysicalMonitorsFromHMONITOR@8 @17
+  GetNumberOfPhysicalMonitorsFromIDirect3DDevice9@8 @18
+  GetPhysicalMonitorsFromHMONITOR@12 @19
+  GetPhysicalMonitorsFromIDirect3DDevice9@12 @20
+  GetTimingReport@8 @21
+  GetVCPFeatureAndVCPFeatureReply@20 @22
+  OPMGetVideoOutputsFromHMONITOR@16 @23
+  OPMGetVideoOutputsFromIDirect3DDevice9Object@16 @24
+  RestoreMonitorFactoryColorDefaults@4 @25
+  RestoreMonitorFactoryDefaults@4 @26
+  SaveCurrentMonitorSettings@4 @27
+  SaveCurrentSettings@4 @28
+  SetMonitorBrightness@8 @29
+  SetMonitorColorTemperature@8 @30
+  SetMonitorContrast@8 @31
+  SetMonitorDisplayAreaPosition@12 @32
+  SetMonitorDisplayAreaSize@12 @33
+  SetMonitorRedGreenOrBlueDrive@12 @34
+  SetMonitorRedGreenOrBlueGain@12 @35
+  SetVCPFeature@12 @36
+  UABGetCertificate@0 @37 PRIVATE
