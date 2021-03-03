@@ -35,6 +35,9 @@ WINEVERSION="wine32-6.0-flatpak-wine32"
 #Output
 echo "2.  Creating new target directory	[x]"
 
+mkdir -p target/package/files/lib/i386-linux-gnu 
+mkdir -p target/package/files/lib/debug/lib/i386-linux-gnu
+mkdir -p target/package/files/lib32
 mkdir -p target/package/files/bin
 mkdir -p target/package/files/lib
 mkdir -p target/package/export/share/applications
@@ -110,6 +113,7 @@ features=devel;multiarch;
 shared=network;ipc;
 sockets=x11;pulseaudio;
 devices=all;
+allow=multiarch
 filesystems=xdg-documents;~/.local/share/winepak32/:create
 
 [Environment]
