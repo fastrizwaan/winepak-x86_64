@@ -113,7 +113,6 @@ features=devel;multiarch;
 shared=network;ipc;
 sockets=x11;pulseaudio;
 devices=all;
-allow=multiarch
 filesystems=xdg-documents;~/.local/share/winepak32/:create
 
 [Environment]
