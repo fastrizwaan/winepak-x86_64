@@ -1,0 +1,166 @@
+{
+  "id" : "io.github.flatpak-wine32",
+  "default-branch" : "stable",
+  "runtime" : "org.freedesktop.Platform",
+  "runtime-version" : "20.08",
+  "runtime-commit" : "9612c86d39430301b03b5462ba5f907fb2c241242bbd3c3ac5e2499428a5a1ee",
+  "sdk" : "org.freedesktop.Sdk",
+  "sdk-commit" : "9b568b50e39d5adfc4ef017b4a286f227b5dafe9bddc66cea68f5ac82f440450",
+  "base-version" : "20.08",
+  "command" : "wine",
+  "modules" : [
+    {
+      "name" : "compat",
+      "buildsystem" : "simple",
+      "build-commands" : [
+        "mkdir -p /app/lib/i386-linux-gnu /app/lib/debug/lib/i386-linux-gnu"
+      ]
+    },
+    {
+      "name" : "wine32",
+      "builddir" : true,
+      "config-opts" : [
+        "--libdir=/app/lib32",
+        "--disable-win16",
+        "--disable-tests",
+        "--without-test",
+        "--with-x"
+      ],
+      "make-install-args" : [
+        "LDCONFIG=/bin/true",
+        "STRIP=/bin/true",
+        "UPDATE_DESKTOP_DATABASE=/bin/true"
+      ],
+      "sources" : [
+        {
+          "url" : "https://dl.winehq.org/wine/source/6.0/wine-6.0.tar.xz",
+          "sha256" : "b493065f2f83ee429c62e2ec58698a3cf63ef78722e1b20765823152e8582c56",
+          "type" : "archive"
+        }
+      ],
+      "build-options" : {
+        "ldflags" : "-L/app/lib32",
+        "prefix" : "/app",
+        "libdir" : "/app/lib32",
+        "env" : {
+          "CC" : "i686-unknown-linux-gnu-gcc",
+          "CXX" : "i686-unknown-linux-gnu-g++"
+        },
+        "strip" : true,
+        "append-path" : "/usr/lib/sdk/toolchain-i386/bin",
+        "prepend-path" : "/app/bin"
+      },
+      "cleanup" : [
+        "*.a",
+        "*.la",
+        "/include",
+        "/lib/pkgconfig",
+        "/lib64/pkgconfig",
+        "/lib/cmake",
+        "/lib64/cmake",
+        "/share/man",
+        "/bin/function_grep.pl",
+        "/bin/widl",
+        "/bin/winebuild",
+        "/bin/winecpp",
+        "/bin/winedump",
+        "/bin/wineg++",
+        "/bin/winegcc",
+        "/bin/winemaker",
+        "/bin/wmc",
+        "/bin/wrc",
+        "/lib/wine/*.def",
+        "/lib64/wine/*.def"
+      ]
+    },
+    {
+      "name" : "winetricks",
+      "buildsystem" : "simple",
+      "sources" : [
+        {
+          "url" : "https://github.com/Winetricks/winetricks/releases/download/20210206/20210206.tar.gz",
+          "sha256" : "705421798b28696f577104ebdf03b068b9343ab096754150f47a6ec06fa8ae65",
+          "type" : "archive"
+        }
+      ],
+      "build-commands" : [
+        "make",
+        "make PREFIX=/app install",
+        "chmod +x /app/bin/winetricks"
+      ]
+    },
+    {
+      "name" : "cabextract",
+      "buildsystem" : "autotools",
+      "sources" : [
+        {
+          "url" : "https://www.cabextract.org.uk/cabextract-1.6.tar.gz",
+          "sha256" : "cee661b56555350d26943c5e127fc75dd290b7f75689d5ebc1f04957c4af55fb",
+          "type" : "archive"
+        }
+      ]
+    },
+    {
+      "name" : "wget",
+      "buildsystem" : "autotools",
+      "sources" : [
+        {
+          "url" : "https://ftp.gnu.org/gnu/wget/wget-1.19.4.tar.gz",
+          "sha256" : "93fb96b0f48a20ff5be0d9d9d3c4a986b469cb853131f9d5fe4cc9cecbc8b5b5",
+          "type" : "archive"
+        }
+      ]
+    }
+  ],
+  "cleanup" : [
+    "/lib/debug",
+    "/bin/extresso",
+    "/bin/genresscript",
+    "/bin/icotool",
+    "/bin/wrestool",
+    "/share/man",
+    "/include"
+  ],
+  "separate-locales" : false,
+  "sdk-extensions" : [
+    "org.freedesktop.Sdk.Compat.i386",
+    "org.freedesktop.Sdk.Extension.toolchain-i386"
+  ],
+  "finish-args" : [
+    "--share=ipc",
+    "--socket=x11",
+    "--share=network",
+    "--socket=pulseaudio",
+    "--allow=multiarch",
+    "--talk-name=org.freedesktop.Notifications",
+    "--filesystem=host",
+    "--device=all",
+    "--persist=.wine",
+    "--env=WINEDLLOVERRIDES=mscoree=d,mshtml=d",
+    "--env=LD_LIBRARY_PATH=/app/lib:/app/lib32",
+    "--env=WINE_RESOLUTION=1920x1080"
+  ],
+  "add-extensions" : {
+    "org.freedesktop.Platform.Compat.i386" : {
+      "directory" : "lib/i386-linux-gnu",
+      "version" : "20.08"
+    },
+    "org.freedesktop.Platform.GL32" : {
+      "directory" : "lib/i386-linux-gnu/GL",
+      "add-ld-path" : "lib",
+      "download-if" : "active-gl-driver",
+      "enable-if" : "active-gl-driver",
+      "merge-dirs" : "vulkan/icd.d;glvnd/egl_vendor.d;OpenCL/vendors;lib/dri;lib/d3d;vulkan/explicit_layer.d",
+      "version" : "1.4",
+      "versions" : "20.08;1.4"
+    },
+    "org.freedesktop.Platform.VAAPI.Intel" : {
+      "directory" : "lib/dri/intel-vaapi-driver",
+      "download-if" : "have-intel-gpu"
+    },
+    "org.gnome.Platform.Compat.i386.Debug" : {
+      "directory" : "lib/debug/lib/i386-linux-gnu",
+      "version" : "20.08"
+    }
+  }
+}

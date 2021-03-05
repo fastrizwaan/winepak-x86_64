@@ -30,7 +30,8 @@ NICE_NAME=$(echo $(echo "$NAME" | sed 's/[A-Z]/ \0/g'))
 DOT_NAME=$(echo "$NICE_NAME" | tr " " . )
 WINEEXE="/app/bin/wine"
 ARCH="x86_64"
-WINEVERSION="wine32-6.0-flatpak-wine32"
+#WINEVERSION="wine32-6.0-flatpak-wine32"
+WINEVERSION="wine32-6.0-flatpak-wine32-20210306"
 
 #Output
 echo "2.  Creating new target directory	[x]"
@@ -113,6 +114,7 @@ features=devel;multiarch;
 shared=network;ipc;
 sockets=x11;pulseaudio;
 devices=all;
+allow=multiarch
 filesystems=xdg-documents;~/.local/share/winepak32/:create
 
 [Environment]
@@ -239,7 +241,7 @@ echo "Started build-export"
 flatpak build-export target/repo target/package && \
 echo "Completed Build-export"
 echo "Started bundle"
-flatpak build-bundle --arch=$ARCH target/repo target/\[winepak32\]$DOT_NAME/org.winepak32.$NAME.flatpak org.winepak32.$NAME --runtime-repo="https://flathub.org/repo/flathub.flatpakrepo"
+flatpak build-bundle --arch=$ARCH target/repo  target/\[winepak32\]$DOT_NAME/org.winepak32.$NAME.flatpak org.winepak32.$NAME --runtime-repo="https://flathub.org/repo/flathub.flatpakrepo"
 
 
 
