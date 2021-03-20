@@ -1,0 +1,19 @@
+#----------------------------------------------------------------
+# Generated CMake target import file for configuration "Release".
+#----------------------------------------------------------------
+
+# Commands may need to know the format version.
+set(CMAKE_IMPORT_FILE_VERSION 1)
+
+# Import target "FAudio::FAudio" for configuration "Release"
+set_property(TARGET FAudio::FAudio APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+set_target_properties(FAudio::FAudio PROPERTIES
+  IMPORTED_LOCATION_RELEASE "${_IMPORT_PREFIX}/lib/libFAudio.so.0.20.12"
+  IMPORTED_SONAME_RELEASE "libFAudio.so.0"
+  )
+
+list(APPEND _IMPORT_CHECK_TARGETS FAudio::FAudio )
+list(APPEND _IMPORT_CHECK_FILES_FOR_FAudio::FAudio "${_IMPORT_PREFIX}/lib/libFAudio.so.0.20.12" )
+
+# Commands beyond this point should not need to know the version.
+set(CMAKE_IMPORT_FILE_VERSION)

@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=wine-x86_64(flatpak)
+Exec=run.sh %F
+MimeType=application/x-ms-dos-executable;
+Icon=io.github.wine-x86_64
+NoDisplay=false
+StartupNotify=true
+X-Desktop-File-Install-Version=0.26
+X-Flatpak-RenamedFrom=wine.desktop;

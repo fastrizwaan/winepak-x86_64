@@ -1,0 +1,535 @@
+; File generated automatically from ../dlls/rpcrt4/rpcrt4.spec; do not edit!
+
+LIBRARY rpcrt4.dll
+
+EXPORTS
+  CreateProxyFromTypeInfo @1
+  CreateStubFromTypeInfo @2
+  CStdStubBuffer_AddRef @3
+  CStdStubBuffer_Connect @4
+  CStdStubBuffer_CountRefs @5
+  CStdStubBuffer_DebugServerQueryInterface @6
+  CStdStubBuffer_DebugServerRelease @7
+  CStdStubBuffer_Disconnect @8
+  CStdStubBuffer_Invoke @9
+  CStdStubBuffer_IsIIDSupported @10
+  CStdStubBuffer_QueryInterface @11
+  DceErrorInqTextA @12
+  DceErrorInqTextW @13
+  DllRegisterServer @14 PRIVATE
+  GlobalMutexClearExternal @15 PRIVATE
+  GlobalMutexRequestExternal @16 PRIVATE
+  IUnknown_AddRef_Proxy @17
+  IUnknown_QueryInterface_Proxy @18
+  IUnknown_Release_Proxy @19
+  I_RpcAbortAsyncCall=I_RpcAsyncAbortCall @20
+  I_RpcAllocate @21
+  I_RpcAsyncAbortCall @22
+  I_RpcAsyncSetHandle @23
+  I_RpcBCacheAllocate @24 PRIVATE
+  I_RpcBCacheFree @25 PRIVATE
+  I_RpcBindingCopy @26 PRIVATE
+  I_RpcBindingInqConnId @27 PRIVATE
+  I_RpcBindingInqDynamicEndPoint @28 PRIVATE
+  I_RpcBindingInqDynamicEndPointA @29 PRIVATE
+  I_RpcBindingInqDynamicEndPointW @30 PRIVATE
+  I_RpcBindingInqLocalClientPID @31
+  I_RpcBindingInqSecurityContext @32 PRIVATE
+  I_RpcBindingInqTransportType @33
+  I_RpcBindingInqWireIdForSnego @34 PRIVATE
+  I_RpcBindingIsClientLocal @35 PRIVATE
+  I_RpcBindingSetAsync @36
+  I_RpcBindingToStaticStringBindingW @37 PRIVATE
+  I_RpcClearMutex @38 PRIVATE
+  I_RpcConnectionInqSockBuffSize @39 PRIVATE
+  I_RpcConnectionSetSockBuffSize @40 PRIVATE
+  I_RpcDeleteMutex @41 PRIVATE
+  I_RpcEnableWmiTrace @42 PRIVATE
+  I_RpcExceptionFilter=RpcExceptionFilter @43
+  I_RpcFree @44
+  I_RpcFreeBuffer @45
+  I_RpcFreePipeBuffer @46 PRIVATE
+  I_RpcGetBuffer @47
+  I_RpcGetBufferWithObject @48 PRIVATE
+  I_RpcGetCurrentCallHandle @49
+  I_RpcGetExtendedError @50 PRIVATE
+  I_RpcIfInqTransferSyntaxes @51 PRIVATE
+  I_RpcLogEvent @52 PRIVATE
+  I_RpcMapWin32Status @53
+  I_RpcNegotiateTransferSyntax @54
+  I_RpcNsBindingSetEntryName @55 PRIVATE
+  I_RpcNsBindingSetEntryNameA @56 PRIVATE
+  I_RpcNsBindingSetEntryNameW @57 PRIVATE
+  I_RpcNsInterfaceExported @58 PRIVATE
+  I_RpcNsInterfaceUnexported @59 PRIVATE
+  I_RpcParseSecurity @60 PRIVATE
+  I_RpcPauseExecution @61 PRIVATE
+  I_RpcProxyNewConnection @62 PRIVATE
+  I_RpcReallocPipeBuffer @63 PRIVATE
+  I_RpcReceive @64
+  I_RpcRequestMutex @65 PRIVATE
+  I_RpcSend @66
+  I_RpcSendReceive @67
+  I_RpcServerAllocateIpPort @68 PRIVATE
+  I_RpcServerInqAddressChangeFn @69 PRIVATE
+  I_RpcServerInqLocalConnAddress @70 PRIVATE
+  I_RpcServerInqTransportType @71 PRIVATE
+  I_RpcServerRegisterForwardFunction @72 PRIVATE
+  I_RpcServerSetAddressChangeFn @73 PRIVATE
+  I_RpcServerStartListening @74
+  I_RpcServerStopListening @75
+  I_RpcServerUseProtseq2A @76 PRIVATE
+  I_RpcServerUseProtseq2W @77 PRIVATE
+  I_RpcServerUseProtseqEp2A @78 PRIVATE
+  I_RpcServerUseProtseqEp2W @79 PRIVATE
+  I_RpcSetAsyncHandle @80 PRIVATE
+  I_RpcSsDontSerializeContext @81 PRIVATE
+  I_RpcSystemFunction001 @82 PRIVATE
+  I_RpcTransConnectionAllocatePacket @83 PRIVATE
+  I_RpcTransConnectionFreePacket @84 PRIVATE
+  I_RpcTransConnectionReallocPacket @85 PRIVATE
+  I_RpcTransDatagramAllocate2 @86 PRIVATE
+  I_RpcTransDatagramAllocate @87 PRIVATE
+  I_RpcTransDatagramFree @88 PRIVATE
+  I_RpcTransGetThreadEvent @89 PRIVATE
+  I_RpcTransIoCancelled @90 PRIVATE
+  I_RpcTransServerNewConnection @91 PRIVATE
+  I_RpcTurnOnEEInfoPropagation @92 PRIVATE
+  I_RpcWindowProc @93
+  I_UuidCreate @94
+  MIDL_wchar_strcpy @95 PRIVATE
+  MIDL_wchar_strlen @96 PRIVATE
+  MesBufferHandleReset @97
+  MesDecodeBufferHandleCreate @98
+  MesDecodeIncrementalHandleCreate @99
+  MesEncodeDynBufferHandleCreate @100
+  MesEncodeFixedBufferHandleCreate @101
+  MesEncodeIncrementalHandleCreate @102
+  MesHandleFree @103
+  MesIncrementalHandleReset @104
+  MesInqProcEncodingId @105 PRIVATE
+  NDRCContextBinding @106
+  NDRCContextMarshall @107
+  NDRCContextUnmarshall @108
+  NDRSContextMarshall2 @109
+  NDRSContextMarshall @110
+  NDRSContextMarshallEx @111
+  NDRSContextUnmarshall2 @112
+  NDRSContextUnmarshall @113
+  NDRSContextUnmarshallEx @114
+  NDRcopy @115 PRIVATE
+  Ndr64AsyncClientCall @116
+  NdrAllocate @117
+  NdrAsyncClientCall @118
+  NdrAsyncServerCall @119
+  NdrAsyncStubCall @120
+  NdrByteCountPointerBufferSize @121
+  NdrByteCountPointerFree @122
+  NdrByteCountPointerMarshall @123
+  NdrByteCountPointerUnmarshall @124
+  NdrCStdStubBuffer2_Release @125
+  NdrCStdStubBuffer_Release @126
+  NdrClearOutParameters @127
+  NdrClientCall2 @128
+  NdrClientCall3 @129
+  NdrClientContextMarshall @130
+  NdrClientContextUnmarshall @131
+  NdrClientInitialize @132 PRIVATE
+  NdrClientInitializeNew @133
+  NdrComplexArrayBufferSize @134
+  NdrComplexArrayFree @135
+  NdrComplexArrayMarshall @136
+  NdrComplexArrayMemorySize @137
+  NdrComplexArrayUnmarshall @138
+  NdrComplexStructBufferSize @139
+  NdrComplexStructFree @140
+  NdrComplexStructMarshall @141
+  NdrComplexStructMemorySize @142
+  NdrComplexStructUnmarshall @143
+  NdrConformantArrayBufferSize @144
+  NdrConformantArrayFree @145
+  NdrConformantArrayMarshall @146
+  NdrConformantArrayMemorySize @147
+  NdrConformantArrayUnmarshall @148
+  NdrConformantStringBufferSize @149
+  NdrConformantStringMarshall @150
+  NdrConformantStringMemorySize @151
+  NdrConformantStringUnmarshall @152
+  NdrConformantStructBufferSize @153
+  NdrConformantStructFree @154
+  NdrConformantStructMarshall @155
+  NdrConformantStructMemorySize @156
+  NdrConformantStructUnmarshall @157
+  NdrConformantVaryingArrayBufferSize @158
+  NdrConformantVaryingArrayFree @159
+  NdrConformantVaryingArrayMarshall @160
+  NdrConformantVaryingArrayMemorySize @161
+  NdrConformantVaryingArrayUnmarshall @162
+  NdrConformantVaryingStructBufferSize @163
+  NdrConformantVaryingStructFree @164
+  NdrConformantVaryingStructMarshall @165
+  NdrConformantVaryingStructMemorySize @166
+  NdrConformantVaryingStructUnmarshall @167
+  NdrContextHandleInitialize @168
+  NdrContextHandleSize @169
+  NdrConvert2 @170
+  NdrConvert @171
+  NdrCorrelationFree @172
+  NdrCorrelationInitialize @173
+  NdrCorrelationPass @174
+  NdrDcomAsyncClientCall @175 PRIVATE
+  NdrDcomAsyncStubCall @176 PRIVATE
+  NdrDllCanUnloadNow @177
+  NdrDllGetClassObject @178
+  NdrDllRegisterProxy @179
+  NdrDllUnregisterProxy @180
+  NdrEncapsulatedUnionBufferSize @181
+  NdrEncapsulatedUnionFree @182
+  NdrEncapsulatedUnionMarshall @183
+  NdrEncapsulatedUnionMemorySize @184
+  NdrEncapsulatedUnionUnmarshall @185
+  NdrFixedArrayBufferSize @186
+  NdrFixedArrayFree @187
+  NdrFixedArrayMarshall @188
+  NdrFixedArrayMemorySize @189
+  NdrFixedArrayUnmarshall @190
+  NdrFreeBuffer @191
+  NdrFullPointerFree @192
+  NdrFullPointerInsertRefId @193
+  NdrFullPointerQueryPointer @194
+  NdrFullPointerQueryRefId @195
+  NdrFullPointerXlatFree @196
+  NdrFullPointerXlatInit @197
+  NdrGetBuffer @198
+  NdrGetDcomProtocolVersion @199 PRIVATE
+  NdrGetPartialBuffer @200 PRIVATE
+  NdrGetPipeBuffer @201 PRIVATE
+  NdrGetSimpleTypeBufferAlignment @202 PRIVATE
+  NdrGetSimpleTypeBufferSize @203 PRIVATE
+  NdrGetSimpleTypeMemorySize @204 PRIVATE
+  NdrGetTypeFlags @205 PRIVATE
+  NdrGetUserMarshalInfo @206
+  NdrHardStructBufferSize @207 PRIVATE
+  NdrHardStructFree @208 PRIVATE
+  NdrHardStructMarshall @209 PRIVATE
+  NdrHardStructMemorySize @210 PRIVATE
+  NdrHardStructUnmarshall @211 PRIVATE
+  NdrInterfacePointerBufferSize @212
+  NdrInterfacePointerFree @213
+  NdrInterfacePointerMarshall @214
+  NdrInterfacePointerMemorySize @215
+  NdrInterfacePointerUnmarshall @216
+  NdrIsAppDoneWithPipes @217 PRIVATE
+  NdrMapCommAndFaultStatus @218
+  NdrMarkNextActivePipe @219 PRIVATE
+  NdrMesProcEncodeDecode2 @220 PRIVATE
+  NdrMesProcEncodeDecode @221
+  NdrMesSimpleTypeAlignSize @222 PRIVATE
+  NdrMesSimpleTypeDecode @223 PRIVATE
+  NdrMesSimpleTypeEncode @224 PRIVATE
+  NdrMesTypeAlignSize2 @225 PRIVATE
+  NdrMesTypeAlignSize @226 PRIVATE
+  NdrMesTypeDecode2 @227
+  NdrMesTypeDecode @228 PRIVATE
+  NdrMesTypeEncode2 @229
+  NdrMesTypeEncode @230 PRIVATE
+  NdrMesTypeFree2 @231
+  NdrNonConformantStringBufferSize @232
+  NdrNonConformantStringMarshall @233
+  NdrNonConformantStringMemorySize @234
+  NdrNonConformantStringUnmarshall @235
+  NdrNonEncapsulatedUnionBufferSize @236
+  NdrNonEncapsulatedUnionFree @237
+  NdrNonEncapsulatedUnionMarshall @238
+  NdrNonEncapsulatedUnionMemorySize @239
+  NdrNonEncapsulatedUnionUnmarshall @240
+  NdrNsGetBuffer @241 PRIVATE
+  NdrNsSendReceive @242 PRIVATE
+  NdrOleAllocate @243
+  NdrOleFree @244
+  NdrOutInit @245 PRIVATE
+  NdrPartialIgnoreClientBufferSize @246 PRIVATE
+  NdrPartialIgnoreClientMarshall @247 PRIVATE
+  NdrPartialIgnoreServerInitialize @248 PRIVATE
+  NdrPartialIgnoreServerUnmarshall @249 PRIVATE
+  NdrPipePull @250 PRIVATE
+  NdrPipePush @251 PRIVATE
+  NdrPipeSendReceive @252 PRIVATE
+  NdrPipesDone @253 PRIVATE
+  NdrPipesInitialize @254 PRIVATE
+  NdrPointerBufferSize @255
+  NdrPointerFree @256
+  NdrPointerMarshall @257
+  NdrPointerMemorySize @258
+  NdrPointerUnmarshall @259
+  NdrProxyErrorHandler @260
+  NdrProxyFreeBuffer @261
+  NdrProxyGetBuffer @262
+  NdrProxyInitialize @263
+  NdrProxySendReceive @264
+  NdrRangeUnmarshall @265
+  NdrRpcSmClientAllocate @266 PRIVATE
+  NdrRpcSmClientFree @267 PRIVATE
+  NdrRpcSmSetClientToOsf @268 PRIVATE
+  NdrRpcSsDefaultAllocate @269 PRIVATE
+  NdrRpcSsDefaultFree @270 PRIVATE
+  NdrRpcSsDisableAllocate @271 PRIVATE
+  NdrRpcSsEnableAllocate @272 PRIVATE
+  NdrSendReceive @273
+  NdrServerCall2 @274
+  NdrServerCall @275
+  NdrServerCallAll @276
+  NdrServerContextMarshall @277
+  NdrServerContextNewMarshall @278
+  NdrServerContextNewUnmarshall @279
+  NdrServerContextUnmarshall @280
+  NdrServerInitialize @281 PRIVATE
+  NdrServerInitializeMarshall @282 PRIVATE
+  NdrServerInitializeNew @283
+  NdrServerInitializePartial @284 PRIVATE
+  NdrServerInitializeUnmarshall @285 PRIVATE
+  NdrServerMarshall @286 PRIVATE
+  NdrServerUnmarshall @287 PRIVATE
+  NdrSimpleStructBufferSize @288
+  NdrSimpleStructFree @289
+  NdrSimpleStructMarshall @290
+  NdrSimpleStructMemorySize @291
+  NdrSimpleStructUnmarshall @292
+  NdrSimpleTypeMarshall @293
+  NdrSimpleTypeUnmarshall @294
+  NdrStubCall2 @295
+  NdrStubCall @296
+  NdrStubForwardingFunction @297
+  NdrStubGetBuffer @298
+  NdrStubInitialize @299
+  NdrStubInitializeMarshall @300 PRIVATE
+  NdrTypeFlags @301 PRIVATE
+  NdrTypeFree @302 PRIVATE
+  NdrTypeMarshall @303 PRIVATE
+  NdrTypeSize @304 PRIVATE
+  NdrTypeUnmarshall @305 PRIVATE
+  NdrUnmarshallBasetypeInline @306 PRIVATE
+  NdrUserMarshalBufferSize @307
+  NdrUserMarshalFree @308
+  NdrUserMarshalMarshall @309
+  NdrUserMarshalMemorySize @310
+  NdrUserMarshalSimpleTypeConvert @311 PRIVATE
+  NdrUserMarshalUnmarshall @312
+  NdrVaryingArrayBufferSize @313
+  NdrVaryingArrayFree @314
+  NdrVaryingArrayMarshall @315
+  NdrVaryingArrayMemorySize @316
+  NdrVaryingArrayUnmarshall @317
+  NdrXmitOrRepAsBufferSize @318
+  NdrXmitOrRepAsFree @319
+  NdrXmitOrRepAsMarshall @320
+  NdrXmitOrRepAsMemorySize @321
+  NdrXmitOrRepAsUnmarshall @322
+  NdrpCreateProxy @323 PRIVATE
+  NdrpCreateStub @324 PRIVATE
+  NdrpGetProcFormatString @325 PRIVATE
+  NdrpGetTypeFormatString @326 PRIVATE
+  NdrpGetTypeGenCookie @327 PRIVATE
+  NdrpMemoryIncrement @328 PRIVATE
+  NdrpReleaseTypeFormatString @329 PRIVATE
+  NdrpReleaseTypeGenCookie @330 PRIVATE
+  NdrpSetRpcSsDefaults @331 PRIVATE
+  NdrpVarVtOfTypeDesc @332 PRIVATE
+  RpcAbortAsyncCall=RpcAsyncAbortCall @333
+  RpcAsyncAbortCall @334
+  RpcAsyncCancelCall @335
+  RpcAsyncCompleteCall @336
+  RpcAsyncGetCallStatus @337
+  RpcAsyncInitializeHandle @338
+  RpcAsyncRegisterInfo @339 PRIVATE
+  RpcBindingCopy @340
+  RpcBindingFree @341
+  RpcBindingFromStringBindingA @342
+  RpcBindingFromStringBindingW @343
+  RpcBindingInqAuthClientA @344
+  RpcBindingInqAuthClientExA @345
+  RpcBindingInqAuthClientExW @346
+  RpcBindingInqAuthClientW @347
+  RpcBindingInqAuthInfoA @348
+  RpcBindingInqAuthInfoExA @349
+  RpcBindingInqAuthInfoExW @350
+  RpcBindingInqAuthInfoW @351
+  RpcBindingInqObject @352
+  RpcBindingInqOption @353 PRIVATE
+  RpcBindingReset @354
+  RpcBindingServerFromClient @355
+  RpcBindingSetAuthInfoA @356
+  RpcBindingSetAuthInfoExA @357
+  RpcBindingSetAuthInfoExW @358
+  RpcBindingSetAuthInfoW @359
+  RpcBindingSetObject @360
+  RpcBindingSetOption @361
+  RpcBindingToStringBindingA @362
+  RpcBindingToStringBindingW @363
+  RpcBindingVectorFree @364
+  RpcCancelAsyncCall=RpcAsyncCancelCall @365
+  RpcCancelThread @366
+  RpcCancelThreadEx @367
+  RpcCertGeneratePrincipalNameA @368 PRIVATE
+  RpcCertGeneratePrincipalNameW @369 PRIVATE
+  RpcCompleteAsyncCall=RpcAsyncCompleteCall @370
+  RpcEpRegisterA @371
+  RpcEpRegisterNoReplaceA @372
+  RpcEpRegisterNoReplaceW @373
+  RpcEpRegisterW @374
+  RpcEpResolveBinding @375
+  RpcEpUnregister @376
+  RpcErrorAddRecord @377 PRIVATE
+  RpcErrorClearInformation @378 PRIVATE
+  RpcErrorEndEnumeration @379
+  RpcErrorGetNextRecord @380
+  RpcErrorLoadErrorInfo @381
+  RpcErrorNumberOfRecords @382 PRIVATE
+  RpcErrorResetEnumeration @383 PRIVATE
+  RpcErrorSaveErrorInfo @384
+  RpcErrorStartEnumeration @385
+  RpcExceptionFilter @386
+  RpcFreeAuthorizationContext @387 PRIVATE
+  RpcGetAsyncCallStatus=RpcAsyncGetCallStatus @388
+  RpcIfIdVectorFree @389 PRIVATE
+  RpcIfInqId @390
+  RpcImpersonateClient @391
+  RpcInitializeAsyncHandle=RpcAsyncInitializeHandle @392
+  RpcMgmtEnableIdleCleanup @393
+  RpcMgmtEpEltInqBegin @394
+  RpcMgmtEpEltInqDone @395 PRIVATE
+  RpcMgmtEpEltInqNextA @396 PRIVATE
+  RpcMgmtEpEltInqNextW @397 PRIVATE
+  RpcMgmtEpUnregister @398 PRIVATE
+  RpcMgmtInqComTimeout @399 PRIVATE
+  RpcMgmtInqDefaultProtectLevel @400 PRIVATE
+  RpcMgmtInqIfIds @401
+  RpcMgmtInqServerPrincNameA @402 PRIVATE
+  RpcMgmtInqServerPrincNameW @403 PRIVATE
+  RpcMgmtInqStats @404
+  RpcMgmtIsServerListening @405
+  RpcMgmtSetAuthorizationFn @406
+  RpcMgmtSetCancelTimeout @407
+  RpcMgmtSetComTimeout @408
+  RpcMgmtSetServerStackSize @409
+  RpcMgmtStatsVectorFree @410
+  RpcMgmtStopServerListening @411
+  RpcMgmtWaitServerListen @412
+  RpcNetworkInqProtseqsA @413
+  RpcNetworkInqProtseqsW @414
+  RpcNetworkIsProtseqValidA @415
+  RpcNetworkIsProtseqValidW @416
+  RpcNsBindingInqEntryNameA @417 PRIVATE
+  RpcNsBindingInqEntryNameW @418 PRIVATE
+  RpcObjectInqType @419 PRIVATE
+  RpcObjectSetInqFn @420 PRIVATE
+  RpcObjectSetType @421
+  RpcProtseqVectorFreeA @422
+  RpcProtseqVectorFreeW @423
+  RpcRaiseException @424
+  RpcRegisterAsyncInfo @425 PRIVATE
+  RpcRevertToSelf @426
+  RpcRevertToSelfEx @427
+  RpcServerInqBindings @428
+  RpcServerInqCallAttributesA @429 PRIVATE
+  RpcServerInqCallAttributesW @430 PRIVATE
+  RpcServerInqDefaultPrincNameA @431
+  RpcServerInqDefaultPrincNameW @432
+  RpcServerInqIf @433 PRIVATE
+  RpcServerListen @434
+  RpcServerRegisterAuthInfoA @435
+  RpcServerRegisterAuthInfoW @436
+  RpcServerRegisterIf2 @437
+  RpcServerRegisterIf3 @438
+  RpcServerRegisterIf @439
+  RpcServerRegisterIfEx @440
+  RpcServerTestCancel @441 PRIVATE
+  RpcServerUnregisterIf @442
+  RpcServerUnregisterIfEx @443
+  RpcServerUseAllProtseqs @444 PRIVATE
+  RpcServerUseAllProtseqsEx @445 PRIVATE
+  RpcServerUseAllProtseqsIf @446 PRIVATE
+  RpcServerUseAllProtseqsIfEx @447 PRIVATE
+  RpcServerUseProtseqA @448
+  RpcServerUseProtseqEpA @449
+  RpcServerUseProtseqEpExA @450
+  RpcServerUseProtseqEpExW @451
+  RpcServerUseProtseqEpW @452
+  RpcServerUseProtseqExA @453 PRIVATE
+  RpcServerUseProtseqExW @454 PRIVATE
+  RpcServerUseProtseqIfA @455 PRIVATE
+  RpcServerUseProtseqIfExA @456 PRIVATE
+  RpcServerUseProtseqIfExW @457 PRIVATE
+  RpcServerUseProtseqIfW @458 PRIVATE
+  RpcServerUseProtseqW @459
+  RpcServerYield @460 PRIVATE
+  RpcSmAllocate @461 PRIVATE
+  RpcSmClientFree @462 PRIVATE
+  RpcSmDestroyClientContext @463
+  RpcSmDisableAllocate @464 PRIVATE
+  RpcSmEnableAllocate @465 PRIVATE
+  RpcSmFree @466 PRIVATE
+  RpcSmGetThreadHandle @467 PRIVATE
+  RpcSmSetClientAllocFree @468 PRIVATE
+  RpcSmSetThreadHandle @469 PRIVATE
+  RpcSmSwapClientAllocFree @470 PRIVATE
+  RpcSsAllocate @471 PRIVATE
+  RpcSsContextLockExclusive @472 PRIVATE
+  RpcSsContextLockShared @473 PRIVATE
+  RpcSsDestroyClientContext @474
+  RpcSsDisableAllocate @475 PRIVATE
+  RpcSsDontSerializeContext @476
+  RpcSsEnableAllocate @477 PRIVATE
+  RpcSsFree @478 PRIVATE
+  RpcSsGetContextBinding @479 PRIVATE
+  RpcSsGetThreadHandle @480 PRIVATE
+  RpcSsSetClientAllocFree @481 PRIVATE
+  RpcSsSetThreadHandle @482 PRIVATE
+  RpcSsSwapClientAllocFree @483 PRIVATE
+  RpcStringBindingComposeA @484
+  RpcStringBindingComposeW @485
+  RpcStringBindingParseA @486
+  RpcStringBindingParseW @487
+  RpcStringFreeA @488
+  RpcStringFreeW @489
+  RpcTestCancel @490 PRIVATE
+  RpcUserFree @491 PRIVATE
+  SimpleTypeAlignment @492 PRIVATE
+  SimpleTypeBufferSize @493 PRIVATE
+  SimpleTypeMemorySize @494 PRIVATE
+  TowerConstruct @495
+  TowerExplode @496
+  UuidCompare @497
+  UuidCreate @498
+  UuidCreateNil @499
+  UuidCreateSequential @500
+  UuidEqual @501
+  UuidFromStringA @502
+  UuidFromStringW @503
+  UuidHash @504
+  UuidIsNil @505
+  UuidToStringA @506
+  UuidToStringW @507
+  char_array_from_ndr @508 PRIVATE
+  char_from_ndr @509 PRIVATE
+  data_from_ndr @510 PRIVATE
+  data_into_ndr @511 PRIVATE
+  data_size_ndr @512 PRIVATE
+  double_array_from_ndr @513 PRIVATE
+  double_from_ndr @514 PRIVATE
+  enum_from_ndr @515 PRIVATE
+  float_array_from_ndr @516 PRIVATE
+  float_from_ndr @517 PRIVATE
+  long_array_from_ndr @518 PRIVATE
+  long_from_ndr @519 PRIVATE
+  long_from_ndr_temp @520 PRIVATE
+  pfnFreeRoutines @521 PRIVATE
+  pfnMarshallRoutines @522 PRIVATE
+  pfnSizeRoutines @523 PRIVATE
+  pfnUnmarshallRoutines @524 PRIVATE
+  short_array_from_ndr @525 PRIVATE
+  short_from_ndr @526 PRIVATE
+  short_from_ndr_temp @527 PRIVATE
+  tree_into_ndr @528 PRIVATE
+  tree_peek_ndr @529 PRIVATE
+  tree_size_ndr @530 PRIVATE

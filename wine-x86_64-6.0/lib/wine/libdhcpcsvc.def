@@ -1,0 +1,50 @@
+; File generated automatically from ../dlls/dhcpcsvc/dhcpcsvc.spec; do not edit!
+
+LIBRARY dhcpcsvc.dll
+
+EXPORTS
+  DhcpAcquireParameters@0 @1 PRIVATE
+  DhcpAcquireParametersByBroadcast@0 @2 PRIVATE
+  DhcpCApiCleanup@0 @3
+  DhcpCApiInitialize@4 @4
+  DhcpDeRegisterConnectionStateNotification@0 @5 PRIVATE
+  DhcpDeRegisterOptions@0 @6 PRIVATE
+  DhcpDeRegisterParamChange@0 @7 PRIVATE
+  DhcpDelPersistentRequestParams@0 @8 PRIVATE
+  DhcpEnumClasses@0 @9 PRIVATE
+  DhcpFallbackRefreshParams@0 @10 PRIVATE
+  DhcpFreeMem@0 @11 PRIVATE
+  DhcpGetDhcpServicedConnctions@0 @12 PRIVATE
+  DhcpGetNotificationStatus@0 @13 PRIVATE
+  DhcpHandlePnPEvent@0 @14 PRIVATE
+  DhcpLeaseIpAddress@0 @15 PRIVATE
+  DhcpLeaseIpAddressEx@0 @16 PRIVATE
+  DhcpNotifyConfigChange@0 @17 PRIVATE
+  DhcpNotifyConfigChangeEx@0 @18 PRIVATE
+  DhcpNotifyMediaReconnected@0 @19 PRIVATE
+  DhcpOpenGlobalEvent@0 @20 PRIVATE
+  DhcpPersistentRequestParams@0 @21 PRIVATE
+  DhcpQueryHWInfo@0 @22 PRIVATE
+  DhcpRegisterConnectionStateNotification@0 @23 PRIVATE
+  DhcpRegisterOptions@0 @24 PRIVATE
+  DhcpRegisterParamChange@0 @25 PRIVATE
+  DhcpReleaseIpAddressLease@0 @26 PRIVATE
+  DhcpReleaseIpAddressLeaseEx@0 @27 PRIVATE
+  DhcpReleaseParameters@0 @28 PRIVATE
+  DhcpRemoveDNSRegistration@0 @29 PRIVATE
+  DhcpRenewIpAddressLease@0 @30 PRIVATE
+  DhcpRenewIpAddressLeaseEx@0 @31 PRIVATE
+  DhcpRequestCachedParams@0 @32 PRIVATE
+  DhcpRequestOptions@0 @33 PRIVATE
+  DhcpRequestParams@44 @34
+  DhcpSetMSFTVendorSpecificOptions@0 @35 PRIVATE
+  DhcpStaticRefreshParams@0 @36 PRIVATE
+  DhcpUndoRequestParams@0 @37 PRIVATE
+  McastApiCleanup@0 @38 PRIVATE
+  McastApiStartup@0 @39 PRIVATE
+  McastEnumerateScopes@0 @40 PRIVATE
+  McastGenUID@0 @41 PRIVATE
+  McastReleaseAddress@0 @42 PRIVATE
+  McastRenewAddress@0 @43 PRIVATE
+  McastRequestAddress@0 @44 PRIVATE
+  ServiceMain@0 @45 PRIVATE

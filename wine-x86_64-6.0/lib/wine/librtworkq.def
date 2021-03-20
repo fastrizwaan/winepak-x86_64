@@ -1,0 +1,42 @@
+; File generated automatically from ../dlls/rtworkq/rtworkq.spec; do not edit!
+
+LIBRARY rtworkq.dll
+
+EXPORTS
+  RtwqAddPeriodicCallback@12 @1
+  RtwqAllocateSerialWorkQueue@8 @2
+  RtwqAllocateWorkQueue@8 @3
+  RtwqBeginRegisterWorkQueueWithMMCSS@24 @4
+  RtwqBeginUnregisterWorkQueueWithMMCSS@12 @5
+  RtwqCancelDeadline@4 @6
+  RtwqCancelMultipleWaitingWorkItem@0 @7 PRIVATE
+  RtwqCancelWorkItem@8 @8
+  RtwqCreateAsyncResult@16 @9
+  RtwqEndRegisterWorkQueueWithMMCSS@8 @10
+  RtwqEndUnregisterWorkQueueWithMMCSS@4 @11
+  RtwqGetPlatform@0 @12 PRIVATE
+  RtwqGetWorkQueueMMCSSClass@12 @13
+  RtwqGetWorkQueueMMCSSPriority@8 @14
+  RtwqGetWorkQueueMMCSSTaskId@8 @15
+  RtwqInvokeCallback@4 @16
+  RtwqJoinWorkQueue@12 @17
+  RtwqLockPlatform@0 @18
+  RtwqLockSharedWorkQueue@16 @19
+  RtwqLockWorkQueue@4 @20
+  RtwqPutMultipleWaitingWorkItem@0 @21 PRIVATE
+  RtwqPutWaitingWorkItem@16 @22
+  RtwqPutWorkItem@12 @23
+  RtwqRegisterPlatformEvents@4 @24
+  RtwqRegisterPlatformWithMMCSS@12 @25
+  RtwqRemovePeriodicCallback@4 @26
+  RtwqScheduleWorkItem@16 @27
+  RtwqSetDeadline@16 @28
+  RtwqSetDeadline2@24 @29
+  RtwqSetLongRunning@8 @30
+  RtwqShutdown@0 @31
+  RtwqStartup@0 @32
+  RtwqUnjoinWorkQueue@8 @33
+  RtwqUnlockPlatform@0 @34
+  RtwqUnlockWorkQueue@4 @35
+  RtwqUnregisterPlatformEvents@4 @36
+  RtwqUnregisterPlatformFromMMCSS@0 @37

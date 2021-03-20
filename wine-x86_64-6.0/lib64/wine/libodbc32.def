@@ -1,0 +1,179 @@
+; File generated automatically from ../dlls/odbc32/odbc32.spec; do not edit!
+
+LIBRARY odbc32.dll
+
+EXPORTS
+  SQLAllocConnect @1
+  SQLAllocEnv @2
+  SQLAllocStmt @3
+  SQLBindCol @4
+  SQLCancel @5
+  SQLColAttributes @6
+  SQLConnect @7
+  SQLDescribeCol @8
+  SQLDisconnect @9
+  SQLError @10
+  SQLExecDirect @11
+  SQLExecute @12
+  SQLFetch @13
+  SQLFreeConnect @14
+  SQLFreeEnv @15
+  SQLFreeStmt @16
+  SQLGetCursorName @17
+  SQLNumResultCols @18
+  SQLPrepare @19
+  SQLRowCount @20
+  SQLSetCursorName @21
+  SQLSetParam @22
+  SQLTransact @23
+  SQLAllocHandle @24
+  SQLBindParam @25
+  SQLCloseCursor @26
+  SQLColAttribute @27
+  SQLCopyDesc @28
+  SQLEndTran @29
+  SQLFetchScroll @30
+  SQLFreeHandle @31
+  SQLGetConnectAttr @32
+  SQLGetDescField @33
+  SQLGetDescRec @34
+  SQLGetDiagField @35
+  SQLGetDiagRec @36
+  SQLGetEnvAttr @37
+  SQLGetStmtAttr @38
+  SQLSetConnectAttr @39
+  SQLColumns @40
+  SQLDriverConnect @41
+  SQLGetConnectOption @42
+  SQLGetData @43
+  SQLGetFunctions @44
+  SQLGetInfo @45
+  SQLGetStmtOption @46
+  SQLGetTypeInfo @47
+  SQLParamData @48
+  SQLPutData @49
+  SQLSetConnectOption @50
+  SQLSetStmtOption @51
+  SQLSpecialColumns @52
+  SQLStatistics @53
+  SQLTables @54
+  SQLBrowseConnect @55
+  SQLColumnPrivileges @56
+  SQLDataSources @57
+  SQLDescribeParam @58
+  SQLExtendedFetch @59
+  SQLForeignKeys @60
+  SQLMoreResults @61
+  SQLNativeSql @62
+  SQLNumParams @63
+  SQLParamOptions @64
+  SQLPrimaryKeys @65
+  SQLProcedureColumns @66
+  SQLProcedures @67
+  SQLSetPos @68
+  SQLSetScrollOptions @69
+  SQLTablePrivileges @70
+  SQLDrivers @71
+  SQLBindParameter @72
+  SQLSetDescField @73
+  SQLSetDescRec @74
+  SQLSetEnvAttr @75
+  SQLSetStmtAttr @76
+  SQLAllocHandleStd @77
+  SQLBulkOperations @78
+  CloseODBCPerfData @79 PRIVATE
+  CollectODBCPerfData @80 PRIVATE
+  CursorLibLockDbc @81 PRIVATE
+  CursorLibLockDesc @82 PRIVATE
+  CursorLibLockStmt @83 PRIVATE
+  ODBCGetTryWaitValue @84 PRIVATE
+  CursorLibTransact @85 PRIVATE
+  ODBSetTryWaitValue @86 PRIVATE
+  ODBCSharedPerfMon @89 PRIVATE
+  ODBCSharedVSFlag @90 PRIVATE
+  SQLColAttributesW @106
+  SQLConnectW @107
+  SQLDescribeColW @108
+  SQLErrorW @110
+  SQLExecDirectW @111
+  SQLGetCursorNameW @117
+  SQLPrepareW @119
+  SQLSetCursorNameW @121
+  SQLColAttributeW @127
+  SQLGetConnectAttrW @132
+  SQLGetDescFieldW @133
+  SQLGetDescRecW @134
+  SQLGetDiagFieldW @135
+  SQLGetDiagRecW @136
+  SQLGetStmtAttrW @138
+  SQLSetConnectAttrW @139
+  SQLColumnsW @140
+  SQLDriverConnectW @141
+  SQLGetConnectOptionW @142
+  SQLGetInfoW @145
+  SQLGetTypeInfoW @147
+  SQLSetConnectOptionW @150
+  SQLSpecialColumnsW @152
+  SQLStatisticsW @153
+  SQLTablesW @154
+  SQLBrowseConnectW @155
+  SQLColumnPrivilegesW @156
+  SQLDataSourcesW @157
+  SQLForeignKeysW @160
+  SQLNativeSqlW @162
+  SQLPrimaryKeysW @165
+  SQLProcedureColumnsW @166
+  SQLProceduresW @167
+  SQLTablePrivilegesW @170
+  SQLDriversW @171
+  SQLSetDescFieldW @173
+  SQLSetStmtAttrW @176
+  SQLColAttributesA @206 PRIVATE
+  SQLConnectA @207 PRIVATE
+  SQLDescribeColA @208 PRIVATE
+  SQLErrorA @210 PRIVATE
+  SQLExecDirectA @211 PRIVATE
+  SQLGetCursorNameA @217 PRIVATE
+  SQLPrepareA @219 PRIVATE
+  SQLSetCursorNameA @221 PRIVATE
+  SQLColAttributeA @227 PRIVATE
+  SQLGetConnectAttrA @232 PRIVATE
+  SQLGetDescFieldA @233 PRIVATE
+  SQLGetDescRecA @234 PRIVATE
+  SQLGetDiagFieldA @235 PRIVATE
+  SQLGetDiagRecA @236
+  SQLGetStmtAttrA @238 PRIVATE
+  SQLSetConnectAttrA @239 PRIVATE
+  SQLColumnsA @240 PRIVATE
+  SQLDriverConnectA @241 PRIVATE
+  SQLGetConnectOptionA @242 PRIVATE
+  SQLGetInfoA @245 PRIVATE
+  SQLGetTypeInfoA @247 PRIVATE
+  SQLSetConnectOptionA @250 PRIVATE
+  SQLSpecialColumnsA @252 PRIVATE
+  SQLStatisticsA @253 PRIVATE
+  SQLTablesA @254 PRIVATE
+  SQLBrowseConnectA @255 PRIVATE
+  SQLColumnPrivilegesA @256 PRIVATE
+  SQLDataSourcesA @257
+  SQLForeignKeysA @260 PRIVATE
+  SQLNativeSqlA @262 PRIVATE
+  SQLPrimaryKeysA @265 PRIVATE
+  SQLProcedureColumnsA @266 PRIVATE
+  SQLProceduresA @267 PRIVATE
+  SQLTablePrivilegesA @270 PRIVATE
+  SQLDriversA @271 PRIVATE
+  SQLSetDescFieldA @273 PRIVATE
+  SQLSetStmtAttrA @276 PRIVATE
+  ODBCSharedTraceFlag @300 PRIVATE
+  ODBCQualifyFileDSNW @301 PRIVATE
+  LockHandle @87 PRIVATE
+  ODBCInternalConnectW @88 PRIVATE
+  OpenODBCPerfData @91 PRIVATE
+  PostComponentError @92 PRIVATE
+  PostODBCComponentError @93 PRIVATE
+  PostODBCError @94 PRIVATE
+  SearchStatusCode @95 PRIVATE
+  VFreeErrors @96 PRIVATE
+  VRetrieveDriverErrorsRowCol @97 PRIVATE
+  ValidateErrorQueue @98 PRIVATE

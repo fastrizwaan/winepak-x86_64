@@ -1,0 +1,66 @@
+; File generated automatically from ../dlls/bcrypt/bcrypt.spec; do not edit!
+
+LIBRARY bcrypt.dll
+
+EXPORTS
+  BCryptAddContextFunction@20 @1
+  BCryptAddContextFunctionProvider@24 @2
+  BCryptCloseAlgorithmProvider@8 @3
+  BCryptConfigureContext@0 @4 PRIVATE
+  BCryptConfigureContextFunction@0 @5 PRIVATE
+  BCryptCreateContext@0 @6 PRIVATE
+  BCryptCreateHash@28 @7
+  BCryptDecrypt@40 @8
+  BCryptDeleteContext@0 @9 PRIVATE
+  BCryptDeriveKey@28 @10
+  BCryptDeriveKeyCapi@20 @11
+  BCryptDeriveKeyPBKDF2@40 @12
+  BCryptDestroyHash@4 @13
+  BCryptDestroyKey@4 @14
+  BCryptDestroySecret@4 @15
+  BCryptDuplicateHash@20 @16
+  BCryptDuplicateKey@20 @17
+  BCryptEncrypt@40 @18
+  BCryptEnumAlgorithms@16 @19
+  BCryptEnumContextFunctionProviders@0 @20 PRIVATE
+  BCryptEnumContextFunctions@20 @21
+  BCryptEnumContexts@0 @22 PRIVATE
+  BCryptEnumProviders@0 @23 PRIVATE
+  BCryptEnumRegisteredProviders@0 @24 PRIVATE
+  BCryptExportKey@28 @25
+  BCryptFinalizeKeyPair@8 @26
+  BCryptFinishHash@16 @27
+  BCryptFreeBuffer@4 @28
+  BCryptGenRandom@16 @29
+  BCryptGenerateKeyPair@16 @30
+  BCryptGenerateSymmetricKey@28 @31
+  BCryptGetFipsAlgorithmMode@4 @32
+  BCryptGetProperty@24 @33
+  BCryptHash@28 @34
+  BCryptHashData@16 @35
+  BCryptImportKey@36 @36
+  BCryptImportKeyPair@28 @37
+  BCryptOpenAlgorithmProvider@16 @38
+  BCryptQueryContextConfiguration@0 @39 PRIVATE
+  BCryptQueryContextFunctionConfiguration@0 @40 PRIVATE
+  BCryptQueryContextFunctionProperty@0 @41 PRIVATE
+  BCryptQueryProviderRegistration@0 @42 PRIVATE
+  BCryptRegisterConfigChangeNotify@0 @43 PRIVATE
+  BCryptRegisterProvider@12 @44
+  BCryptRemoveContextFunction@16 @45
+  BCryptRemoveContextFunctionProvider@20 @46
+  BCryptResolveProviders@0 @47 PRIVATE
+  BCryptSecretAgreement@16 @48
+  BCryptSetAuditingInterface@0 @49 PRIVATE
+  BCryptSetContextFunctionProperty@0 @50 PRIVATE
+  BCryptSetProperty@20 @51
+  BCryptSignHash@32 @52
+  BCryptUnregisterConfigChangeNotify@0 @53 PRIVATE
+  BCryptUnregisterProvider@4 @54
+  BCryptVerifySignature@28 @55
+  GetAsymmetricEncryptionInterface@0 @56 PRIVATE
+  GetCipherInterface@0 @57 PRIVATE
+  GetHashInterface@0 @58 PRIVATE
+  GetRngInterface@0 @59 PRIVATE
+  GetSecretAgreementInterface@0 @60 PRIVATE
+  GetSignatureInterface@0 @61 PRIVATE

@@ -1,1 +1,1 @@
-./make_winepak32.sh Notepadpp Notepadpp/ notepadpp.exe
+./make_winepak-x86_64.sh Notepadpp Notepadpp/ notepadpp.exe

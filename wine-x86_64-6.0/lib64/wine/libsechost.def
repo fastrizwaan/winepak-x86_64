@@ -1,0 +1,213 @@
+; File generated automatically from ../dlls/sechost/sechost.spec; do not edit!
+
+LIBRARY sechost.dll
+
+EXPORTS
+  I_ScSetServiceBitsA @1 PRIVATE
+  I_ScSetServiceBitsW @2 PRIVATE
+  AuditComputeEffectivePolicyBySid @3 PRIVATE
+  AuditEnumerateCategories @4 PRIVATE
+  AuditEnumeratePerUserPolicy @5 PRIVATE
+  AuditEnumerateSubCategories @6 PRIVATE
+  AuditFree @7 PRIVATE
+  AuditLookupCategoryNameW @8 PRIVATE
+  AuditLookupSubCategoryNameW @9 PRIVATE
+  AuditQueryGlobalSaclW @10 PRIVATE
+  AuditQueryPerUserPolicy @11 PRIVATE
+  AuditQuerySecurity @12 PRIVATE
+  AuditQuerySystemPolicy=advapi32.AuditQuerySystemPolicy @13
+  AuditSetGlobalSaclW @14 PRIVATE
+  AuditSetPerUserPolicy @15 PRIVATE
+  AuditSetSecurity @16 PRIVATE
+  AuditSetSystemPolicy @17 PRIVATE
+  BuildSecurityDescriptorForSharingAccess @18 PRIVATE
+  BuildSecurityDescriptorForSharingAccessEx @19 PRIVATE
+  CapabilityCheck @20 PRIVATE
+  CapabilityCheckForSingleSessionSku @21 PRIVATE
+  ChangeServiceConfig2A @22
+  ChangeServiceConfig2W @23
+  ChangeServiceConfigA @24
+  ChangeServiceConfigW @25
+  CloseServiceHandle @26
+  CloseTrace @27
+  ControlService @28
+  ControlServiceExA @29 PRIVATE
+  ControlServiceExW @30 PRIVATE
+  ControlTraceA @31
+  ControlTraceW @32
+  ConvertSDToStringSDRootDomainW @33 PRIVATE
+  ConvertSecurityDescriptorToStringSecurityDescriptorW @34
+  ConvertSidToStringSidW @35
+  ConvertStringSDToSDDomainA @36 PRIVATE
+  ConvertStringSDToSDDomainW @37 PRIVATE
+  ConvertStringSDToSDRootDomainW @38 PRIVATE
+  ConvertStringSecurityDescriptorToSecurityDescriptorW @39
+  ConvertStringSidToSidW @40
+  CreateServiceA @41
+  CreateServiceEx @42 PRIVATE
+  CreateServiceW @43
+  CredBackupCredentials @44 PRIVATE
+  CredDeleteA=advapi32.CredDeleteA @45
+  CredDeleteW=advapi32.CredDeleteW @46
+  CredEncryptAndMarshalBinaryBlob @47 PRIVATE
+  CredEnumerateA=advapi32.CredEnumerateA @48
+  CredEnumerateW=advapi32.CredEnumerateW @49
+  CredFindBestCredentialA @50 PRIVATE
+  CredFindBestCredentialW @51 PRIVATE
+  CredFree=advapi32.CredFree @52
+  CredGetSessionTypes=advapi32.CredGetSessionTypes @53
+  CredGetTargetInfoA @54 PRIVATE
+  CredGetTargetInfoW @55 PRIVATE
+  CredIsMarshaledCredentialW=advapi32.CredIsMarshaledCredentialW @56
+  CredIsProtectedA @57 PRIVATE
+  CredIsProtectedW @58 PRIVATE
+  CredMarshalCredentialA=advapi32.CredMarshalCredentialA @59
+  CredMarshalCredentialW=advapi32.CredMarshalCredentialW @60
+  CredParseUserNameWithType @61 PRIVATE
+  CredProfileLoaded @62 PRIVATE
+  CredProfileLoadedEx @63 PRIVATE
+  CredProfileUnloaded @64 PRIVATE
+  CredProtectA @65 PRIVATE
+  CredProtectW @66 PRIVATE
+  CredReadA=advapi32.CredReadA @67
+  CredReadByTokenHandle @68 PRIVATE
+  CredReadDomainCredentialsA=advapi32.CredReadDomainCredentialsA @69
+  CredReadDomainCredentialsW=advapi32.CredReadDomainCredentialsW @70
+  CredReadW=advapi32.CredReadW @71
+  CredRestoreCredentials @72 PRIVATE
+  CredUnmarshalCredentialA=advapi32.CredUnmarshalCredentialA @73
+  CredUnmarshalCredentialW=advapi32.CredUnmarshalCredentialW @74
+  CredUnprotectA @75 PRIVATE
+  CredUnprotectW @76 PRIVATE
+  CredWriteA=advapi32.CredWriteA @77
+  CredWriteDomainCredentialsA @78 PRIVATE
+  CredWriteDomainCredentialsW @79 PRIVATE
+  CredWriteW=advapi32.CredWriteW @80
+  CredpConvertCredential @81 PRIVATE
+  CredpConvertOneCredentialSize @82 PRIVATE
+  CredpConvertTargetInfo @83 PRIVATE
+  CredpDecodeCredential @84 PRIVATE
+  CredpEncodeCredential @85 PRIVATE
+  CredpEncodeSecret @86 PRIVATE
+  DeleteService @87
+  EnableTraceEx2 @88
+  EnumDependentServicesW @89
+  EnumServicesStatusExW @90
+  EnumerateIdentityProviders @91 PRIVATE
+  EnumerateTraceGuidsEx @92 PRIVATE
+  EtwQueryRealtimeConsumer @93 PRIVATE
+  EventAccessControl @94 PRIVATE
+  EventAccessQuery @95 PRIVATE
+  EventAccessRemove @96 PRIVATE
+  FreeTransientObjectSecurityDescriptor @97 PRIVATE
+  GetDefaultIdentityProvider @98 PRIVATE
+  GetIdentityProviderInfoByGUID @99 PRIVATE
+  GetIdentityProviderInfoByName @100 PRIVATE
+  GetServiceDirectory @101 PRIVATE
+  GetServiceDisplayNameW @102
+  GetServiceKeyNameW @103
+  GetServiceRegistryStateKey @104 PRIVATE
+  I_QueryTagInformation @105 PRIVATE
+  I_RegisterSvchostNotificationCallback @106 PRIVATE
+  I_ScBroadcastServiceControlMessage @107 PRIVATE
+  I_ScIsSecurityProcess @108 PRIVATE
+  I_ScPnPGetServiceName @109 PRIVATE
+  I_ScQueryServiceConfig @110 PRIVATE
+  I_ScRegisterDeviceNotification @111
+  I_ScRegisterPreshutdownRestart @112 PRIVATE
+  I_ScReparseServiceDatabase @113 PRIVATE
+  I_ScRpcBindA @114 PRIVATE
+  I_ScRpcBindW @115 PRIVATE
+  I_ScSendPnPMessage @116 PRIVATE
+  I_ScSendTSMessage @117 PRIVATE
+  I_ScUnregisterDeviceNotification @118
+  I_ScValidatePnPService @119 PRIVATE
+  LocalGetConditionForString @120 PRIVATE
+  LocalGetReferencedTokenTypesForCondition @121 PRIVATE
+  LocalGetStringForCondition @122 PRIVATE
+  LocalRpcBindingCreateWithSecurity @123 PRIVATE
+  LocalRpcBindingSetAuthInfoEx @124 PRIVATE
+  LookupAccountNameLocalA @125 PRIVATE
+  LookupAccountNameLocalW @126 PRIVATE
+  LookupAccountSidLocalA=advapi32.LookupAccountSidLocalA @127
+  LookupAccountSidLocalW=advapi32.LookupAccountSidLocalW @128
+  LsaAddAccountRights=advapi32.LsaAddAccountRights @129
+  LsaClose=advapi32.LsaClose @130
+  LsaCreateSecret @131 PRIVATE
+  LsaDelete @132 PRIVATE
+  LsaEnumerateAccountRights=advapi32.LsaEnumerateAccountRights @133
+  LsaEnumerateAccountsWithUserRight=advapi32.LsaEnumerateAccountsWithUserRight @134
+  LsaFreeMemory=advapi32.LsaFreeMemory @135
+  LsaICLookupNames @136 PRIVATE
+  LsaICLookupNamesWithCreds @137 PRIVATE
+  LsaICLookupSids @138 PRIVATE
+  LsaICLookupSidsWithCreds @139 PRIVATE
+  LsaLookupClose @140 PRIVATE
+  LsaLookupFreeMemory @141 PRIVATE
+  LsaLookupGetDomainInfo @142 PRIVATE
+  LsaLookupManageSidNameMapping @143 PRIVATE
+  LsaLookupNames2=advapi32.LsaLookupNames2 @144
+  LsaLookupOpenLocalPolicy @145 PRIVATE
+  LsaLookupSids=advapi32.LsaLookupSids @146
+  LsaLookupSids2 @147 PRIVATE
+  LsaLookupTranslateNames @148 PRIVATE
+  LsaLookupTranslateSids @149 PRIVATE
+  LsaLookupUserAccountType @150 PRIVATE
+  LsaOpenPolicy=advapi32.LsaOpenPolicy @151
+  LsaOpenSecret @152 PRIVATE
+  LsaQueryInformationPolicy=advapi32.LsaQueryInformationPolicy @153
+  LsaQuerySecret @154 PRIVATE
+  LsaRemoveAccountRights=advapi32.LsaRemoveAccountRights @155
+  LsaRetrievePrivateData=advapi32.LsaRetrievePrivateData @156
+  LsaSetInformationPolicy=advapi32.LsaSetInformationPolicy @157
+  LsaSetSecret=advapi32.LsaSetSecret @158
+  LsaStorePrivateData=advapi32.LsaStorePrivateData @159
+  NotifyServiceStatusChange @160 PRIVATE
+  NotifyServiceStatusChangeA @161 PRIVATE
+  NotifyServiceStatusChangeW @162
+  OpenSCManagerA @163
+  OpenSCManagerW @164
+  OpenServiceA @165
+  OpenServiceW @166
+  OpenTraceW @167
+  ProcessTrace @168
+  QueryAllTracesA @169
+  QueryAllTracesW @170
+  QueryLocalUserServiceName @171 PRIVATE
+  QueryServiceConfig2A @172
+  QueryServiceConfig2W @173
+  QueryServiceConfigA @174
+  QueryServiceConfigW @175
+  QueryServiceDynamicInformation @176 PRIVATE
+  QueryServiceObjectSecurity @177
+  QueryServiceStatus @178
+  QueryServiceStatusEx @179
+  QueryTraceProcessingHandle @180 PRIVATE
+  QueryTransientObjectSecurityDescriptor @181 PRIVATE
+  QueryUserServiceName @182 PRIVATE
+  QueryUserServiceNameForContext @183 PRIVATE
+  RegisterServiceCtrlHandlerA @184
+  RegisterServiceCtrlHandlerExA @185
+  RegisterServiceCtrlHandlerExW @186
+  RegisterServiceCtrlHandlerW @187
+  RegisterTraceGuidsA=advapi32.RegisterTraceGuidsA @188
+  ReleaseIdentityProviderEnumContext @189 PRIVATE
+  RemoveTraceCallback @190 PRIVATE
+  RpcClientCapabilityCheck @191 PRIVATE
+  SetLocalRpcServerInterfaceSecurity @192 PRIVATE
+  SetLocalRpcServerProtseqSecurity @193 PRIVATE
+  SetServiceObjectSecurity @194
+  SetServiceStatus @195
+  SetTraceCallback @196 PRIVATE
+  StartServiceA @197
+  StartServiceCtrlDispatcherA @198
+  StartServiceCtrlDispatcherW @199
+  StartServiceW @200
+  StartTraceA @201
+  StartTraceW @202
+  StopTraceW @203
+  SubscribeServiceChangeNotifications @204 PRIVATE
+  TraceQueryInformation @205 PRIVATE
+  TraceSetInformation @206
+  UnsubscribeServiceChangeNotifications @207 PRIVATE
+  WaitServiceState @208 PRIVATE

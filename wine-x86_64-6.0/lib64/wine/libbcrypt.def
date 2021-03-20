@@ -1,0 +1,66 @@
+; File generated automatically from ../dlls/bcrypt/bcrypt.spec; do not edit!
+
+LIBRARY bcrypt.dll
+
+EXPORTS
+  BCryptAddContextFunction @1
+  BCryptAddContextFunctionProvider @2
+  BCryptCloseAlgorithmProvider @3
+  BCryptConfigureContext @4 PRIVATE
+  BCryptConfigureContextFunction @5 PRIVATE
+  BCryptCreateContext @6 PRIVATE
+  BCryptCreateHash @7
+  BCryptDecrypt @8
+  BCryptDeleteContext @9 PRIVATE
+  BCryptDeriveKey @10
+  BCryptDeriveKeyCapi @11
+  BCryptDeriveKeyPBKDF2 @12
+  BCryptDestroyHash @13
+  BCryptDestroyKey @14
+  BCryptDestroySecret @15
+  BCryptDuplicateHash @16
+  BCryptDuplicateKey @17
+  BCryptEncrypt @18
+  BCryptEnumAlgorithms @19
+  BCryptEnumContextFunctionProviders @20 PRIVATE
+  BCryptEnumContextFunctions @21
+  BCryptEnumContexts @22 PRIVATE
+  BCryptEnumProviders @23 PRIVATE
+  BCryptEnumRegisteredProviders @24 PRIVATE
+  BCryptExportKey @25
+  BCryptFinalizeKeyPair @26
+  BCryptFinishHash @27
+  BCryptFreeBuffer @28
+  BCryptGenRandom @29
+  BCryptGenerateKeyPair @30
+  BCryptGenerateSymmetricKey @31
+  BCryptGetFipsAlgorithmMode @32
+  BCryptGetProperty @33
+  BCryptHash @34
+  BCryptHashData @35
+  BCryptImportKey @36
+  BCryptImportKeyPair @37
+  BCryptOpenAlgorithmProvider @38
+  BCryptQueryContextConfiguration @39 PRIVATE
+  BCryptQueryContextFunctionConfiguration @40 PRIVATE
+  BCryptQueryContextFunctionProperty @41 PRIVATE
+  BCryptQueryProviderRegistration @42 PRIVATE
+  BCryptRegisterConfigChangeNotify @43 PRIVATE
+  BCryptRegisterProvider @44
+  BCryptRemoveContextFunction @45
+  BCryptRemoveContextFunctionProvider @46
+  BCryptResolveProviders @47 PRIVATE
+  BCryptSecretAgreement @48
+  BCryptSetAuditingInterface @49 PRIVATE
+  BCryptSetContextFunctionProperty @50 PRIVATE
+  BCryptSetProperty @51
+  BCryptSignHash @52
+  BCryptUnregisterConfigChangeNotify @53 PRIVATE
+  BCryptUnregisterProvider @54
+  BCryptVerifySignature @55
+  GetAsymmetricEncryptionInterface @56 PRIVATE
+  GetCipherInterface @57 PRIVATE
+  GetHashInterface @58 PRIVATE
+  GetRngInterface @59 PRIVATE
+  GetSecretAgreementInterface @60 PRIVATE
+  GetSignatureInterface @61 PRIVATE

@@ -1,0 +1,33 @@
+; File generated automatically from ../dlls/evr/evr.spec; do not edit!
+
+LIBRARY evr.dll
+
+EXPORTS
+  DllCanUnloadNow @1 PRIVATE
+  DllGetClassObject @2 PRIVATE
+  DllRegisterServer @3 PRIVATE
+  DllUnregisterServer @4 PRIVATE
+  MFConvertColorInfoFromDXVA @5 PRIVATE
+  MFConvertColorInfoToDXVA @6
+  MFConvertFromFP16Array @7 PRIVATE
+  MFConvertToFP16Array @8 PRIVATE
+  MFCopyImage @9
+  MFCreateDXSurfaceBuffer @10
+  MFCreateVideoMediaType @11 PRIVATE
+  MFCreateVideoMediaTypeFromBitMapInfoHeader @12 PRIVATE
+  MFCreateVideoMediaTypeFromSubtype @13
+  MFCreateVideoMediaTypeFromVideoInfoHeader2 @14 PRIVATE
+  MFCreateVideoMediaTypeFromVideoInfoHeader @15 PRIVATE
+  MFCreateVideoMixer @16
+  MFCreateVideoMixerAndPresenter @17
+  MFCreateVideoOTA @18 PRIVATE
+  MFCreateVideoPresenter2 @19 PRIVATE
+  MFCreateVideoPresenter @20
+  MFCreateVideoSampleAllocator @21
+  MFCreateVideoSampleFromSurface @22
+  MFGetPlaneSize @23
+  MFGetStrideForBitmapInfoHeader @24 PRIVATE
+  MFGetUncompressedVideoFormat @25 PRIVATE
+  MFInitVideoFormat @26 PRIVATE
+  MFInitVideoFormat_RGB @27 PRIVATE
+  MFIsFormatYUV @28 PRIVATE
