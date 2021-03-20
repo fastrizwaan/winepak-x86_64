@@ -1,8 +1,9 @@
-# winepak32
-Create Windows 32 bit Games and 32 bit Applications Flatpak bundles with Wine 32 bit included in the bundle. we can create a Game.flatpak bundle which includes Game+Wine+game run script.
-winepak32 is uses Flatpak Sdk 20.08 with Compat.i386 runtime
+# winepak-x86_64
+Create and Run Windows 32 bit, and 64 bit Games & Applications Flatpak bundle, Which can be run from desktop shortcut. They are sandboxed, like playonlinux's bottle. 
 
-## Build wine 32 flatpak bundle
+winepak-x86_64 uses Flatpak Sdk 20.08 with Compat.i386 runtime, please install dependencies.
+
+## Install dependencies
 ```
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 sudo flatpak install \
@@ -24,19 +25,17 @@ NVERSION=$(nvidia-settings -q all |grep OpenGLVersion|grep NVIDIA|sed 's/.*NVIDI
 sudo flatpak install flathub org.freedesktop.Platform.GL32.$NVERSION -y
 ```
 
-## Create wine32 flatpak bundle
+## Create wine app/game flatpak bundle
 ```
-git clone https://github.com/fastrizwaan/winepak32.git
-cd winepak32/NotepadPP/
+git clone https://github.com/fastrizwaan/winepak-x86_64.git
+cd winepak-x86_64/NotepadPP/
 sh ./commandline.sh 
 ./target/\[winepak32\]Notepadpp/install.sh 
 ./target/\[winepak32\]Notepadpp/run.sh 
 ```
-This bundle is created using "direct play" or "no-install" directory. for Installers (e.g., Setup.exe) use `flatpak-wine32` see below.
+This bundle is created using "direct play" or "no-install" directory. for Installers (e.g., Setup.exe) use `flatpak wine-x86_64` see below.
 
-### wine used in this winepak32 from with 20.08 runtime
-https://github.com/fastrizwaan/flatpak-wine32
+### wine used in this winepak-x86_64 from with 20.08 runtime
+https://github.com/fastrizwaan/flatpak-wine
 
-### Old 18.08 i386 version of make flatpak
-https://github.com/fastrizwaan/flatpak-wine 
 
