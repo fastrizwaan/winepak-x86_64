@@ -31,8 +31,8 @@ DOT_NAME=$(echo "$NICE_NAME" | tr " " . )
 WINEEXE="/app/bin/wine"
 ARCH="x86_64"
 #WINEVERSION="wine32-6.0-flatpak-wine32"
-WINEVERSION="wine-x86_64-6.0"
-
+#WINEVERSION="wine-x86_64-6.0"
+WINEVERSION="proton-x86_64-6.4"
 #Output
 echo "2.  Creating new target directory	[x]"
 
