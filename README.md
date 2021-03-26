@@ -1,6 +1,23 @@
 # winepak-x86_64
 Create and Run Windows 32 bit, and 64 bit Games & Applications Flatpak bundle, Which can be run from desktop shortcut. They are sandboxed, like playonlinux's bottle. 
 
+### USAGE: Create wine app/game flatpak bundle
+#### See commandline.sh for details
+the Script `make_winepak-x86_64.sh` expect 3 things
+1. Name of the Program or Game
+2. Directory of the Program or Game
+3. .exe file name which is inside the Directory (example notepad++.exe)
+
+Here we have NotepadPP directory. 
+```
+git clone https://github.com/fastrizwaan/winepak-x86_64.git
+cd winepak-x86_64/NotepadPP/
+sh ./commandline.sh 
+./target/\[winepak32\]Notepadpp/install.sh 
+./target/\[winepak32\]Notepadpp/run.sh 
+```
+
+
 winepak-x86_64 uses Flatpak Sdk 20.08 with Compat.i386 runtime, please install dependencies.
 
 ## Install dependencies
@@ -25,14 +42,6 @@ NVERSION=$(nvidia-settings -q all |grep OpenGLVersion|grep NVIDIA|sed 's/.*NVIDI
 sudo flatpak install flathub org.freedesktop.Platform.GL32.$NVERSION -y
 ```
 
-## Create wine app/game flatpak bundle
-```
-git clone https://github.com/fastrizwaan/winepak-x86_64.git
-cd winepak-x86_64/NotepadPP/
-sh ./commandline.sh 
-./target/\[winepak32\]Notepadpp/install.sh 
-./target/\[winepak32\]Notepadpp/run.sh 
-```
 This bundle is created using "direct play" or "no-install" directory. for Installers (e.g., Setup.exe) use `flatpak wine-x86_64` see below.
 
 ### wine used in this winepak-x86_64 from with 20.08 runtime
