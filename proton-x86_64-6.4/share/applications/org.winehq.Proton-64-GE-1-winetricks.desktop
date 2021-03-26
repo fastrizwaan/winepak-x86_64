@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=flatpak-Proton-64-GE-1-winetricks
+Comment=Work around problems and install applications under Wine
+Comment[pl]=Rozwiązuj problemy i instaluj aplikacje z użyciem Wine
+Comment[ru]=Решение проблем и установка программ с помощью Wine
+Exec=Proton-64-GE-1.sh winetricks --gui
+Terminal=false
+Icon=org.winehq.Proton-64-GE-1-winetricks
+Type=Application
+Categories=Utility;
+X-Desktop-File-Install-Version=0.26

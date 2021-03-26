@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=flatpak-Proton-64-GE-1
+Exec=Proton-64-GE-1.sh %F
+MimeType=application/x-ms-dos-executable;
+Icon=org.winehq.Proton-64-GE-1
+NoDisplay=false
+StartupNotify=true
+X-Desktop-File-Install-Version=0.26
+X-Flatpak-RenamedFrom=wine.desktop;

@@ -1,0 +1,160 @@
+{
+  "id" : "org.winehq.Proton-64-GE-1",
+  "default-branch" : "stable",
+  "runtime" : "org.freedesktop.Platform",
+  "runtime-version" : "20.08",
+  "runtime-commit" : "3df94b90f4198d3a6bd56400600818b41e23006b8a0bbbeec9634238851033af",
+  "sdk" : "org.freedesktop.Sdk",
+  "sdk-commit" : "32b0b21c6fecd836a1fe32342e22579bdbe38db90bf3430c85e3037eec13bc4a",
+  "base-version" : "20.08",
+  "command" : "Proton-64-GE-1.sh",
+  "modules" : [
+    {
+      "name" : "compat",
+      "buildsystem" : "simple",
+      "build-commands" : [
+        "mkdir -p /app/lib/i386-linux-gnu /app/lib/debug/lib/i386-linux-gnu"
+      ]
+    },
+    {
+      "name" : "Proton-6.1-GE-2",
+      "buildsystem" : "simple",
+      "sources" : [
+        {
+          "url" : "https://github.com/GloriousEggroll/proton-ge-custom/releases/download/6.4-GE-1/Proton-6.4-GE-1.tar.gz",
+          "sha256" : "e53c25921566b19b8ee925cbf5e930603e828e1f09e62ac2ee2c4d4fe68d2776",
+          "type" : "archive"
+        }
+      ],
+      "build-commands" : [
+        "mkdir -p /app/bin /app/lib /app/lib64 /app/share",
+        "rm -rf dist/share/wine/gecko",
+        "rm -rf dist/share/wine/mono",
+        "cp -rdvf dist/* /app"
+      ]
+    },
+    {
+      "name" : "winetricks",
+      "buildsystem" : "simple",
+      "sources" : [
+        {
+          "url" : "https://github.com/Winetricks/winetricks/releases/download/20210206/20210206.tar.gz",
+          "sha256" : "705421798b28696f577104ebdf03b068b9343ab096754150f47a6ec06fa8ae65",
+          "type" : "archive"
+        }
+      ],
+      "build-commands" : [
+        "make",
+        "make PREFIX=/app install",
+        "chmod +x /app/bin/winetricks"
+      ]
+    },
+    {
+      "name" : "cabextract",
+      "buildsystem" : "autotools",
+      "sources" : [
+        {
+          "url" : "https://www.cabextract.org.uk/cabextract-1.6.tar.gz",
+          "sha256" : "cee661b56555350d26943c5e127fc75dd290b7f75689d5ebc1f04957c4af55fb",
+          "type" : "archive"
+        }
+      ]
+    },
+    {
+      "name" : "wget",
+      "buildsystem" : "autotools",
+      "sources" : [
+        {
+          "url" : "https://ftp.gnu.org/gnu/wget/wget-1.19.4.tar.gz",
+          "sha256" : "93fb96b0f48a20ff5be0d9d9d3c4a986b469cb853131f9d5fe4cc9cecbc8b5b5",
+          "type" : "archive"
+        }
+      ]
+    },
+    {
+      "name" : "winedesktop",
+      "buildsystem" : "simple",
+      "build-commands" : [
+        "install -Dm644 /app/share/icons/hicolor/scalable/apps/winetricks.svg /app/share/icons/hicolor/scalable/apps/org.winehq.Proton-64-GE-1.svg",
+        "desktop-file-edit --set-name=flatpak-Proton-64-GE-1 /app/share/applications/wine.desktop",
+        "desktop-file-edit --set-icon=org.winehq.Proton-64-GE-1 /app/share/applications/wine.desktop",
+        "desktop-file-edit --set-name=flatpak-Proton-64-GE-1 /app/share/applications/wine.desktop",
+        "desktop-file-edit --set-key=\"Exec\" --set-value=\"Proton-64-GE-1.sh %F\" /app/share/applications/wine.desktop",
+        "desktop-file-edit --set-key=\"MimeType\" --set-value=\"application/x-ms-dos-executable;\" /app/share/applications/wine.desktop",
+        "desktop-file-edit --set-key=\"NoDisplay\" --set-value=\"false\" /app/share/applications/wine.desktop",
+        "desktop-file-edit --set-name=flatpak-Proton-64-GE-1-winetricks /app/share/applications/winetricks.desktop",
+        "desktop-file-edit --set-icon=org.winehq.Proton-64-GE-1-winetricks /app/share/applications/winetricks.desktop",
+        "desktop-file-edit --set-key=\"Exec\" --set-value=\"Proton-64-GE-1.sh winetricks --gui\" /app/share/applications/winetricks.desktop",
+        "install -Dm644    /app/share/applications/winetricks.desktop /app/share/applications/org.winehq.Proton-64-GE-1-winetricks.desktop",
+        "install -Dm644 /app/share/icons/hicolor/scalable/apps/winetricks.svg /app/share/icons/hicolor/scalable/apps/org.winehq.Proton-64-GE-1-winetricks.svg"
+      ]
+    },
+    {
+      "name" : "Proton-64-GE-1.sh_wine",
+      "buildsystem" : "simple",
+      "sources" : [
+        {
+          "path" : "Proton-64-GE-1.sh",
+          "type" : "file"
+        }
+      ],
+      "build-commands" : [
+        "install -Dm755 Proton-64-GE-1.sh /app/bin/Proton-64-GE-1.sh"
+      ]
+    }
+  ],
+  "cleanup" : [
+    "/lib/debug",
+    "/lib32/debug",
+    "/lib64/debug",
+    "/share/man",
+    "/include",
+    "/share/applications/winetricks.desktop",
+    "/app/share/icons/hicolor/scalable/apps/winetricks.svg",
+    "/app/share/applications/winetricks.desktop"
+  ],
+  "separate-locales" : false,
+  "sdk-extensions" : [
+    "org.freedesktop.Sdk.Compat.i386",
+    "org.freedesktop.Sdk.Extension.toolchain-i386"
+  ],
+  "finish-args" : [
+    "--share=ipc",
+    "--socket=x11",
+    "--share=network",
+    "--socket=pulseaudio",
+    "--allow=multiarch",
+    "--allow=devel",
+    "--talk-name=org.freedesktop.Notifications",
+    "--filesystem=host",
+    "--device=all",
+    "--persist=.wine",
+    "--env=WINEDLLOVERRIDES=\"mscoree,mshtml=\"",
+    "--env=LD_LIBRARY_PATH=/app/lib:/app/lib32",
+    "--env=WINE_RESOLUTION=1920x1080"
+  ],
+  "rename-desktop-file" : "wine.desktop",
+  "add-extensions" : {
+    "org.freedesktop.Platform.Compat.i386" : {
+      "directory" : "lib/i386-linux-gnu",
+      "version" : "20.08"
+    },
+    "org.freedesktop.Platform.GL32" : {
+      "directory" : "lib/i386-linux-gnu/GL",
+      "add-ld-path" : "lib",
+      "download-if" : "active-gl-driver",
+      "enable-if" : "active-gl-driver",
+      "merge-dirs" : "vulkan/icd.d;glvnd/egl_vendor.d;OpenCL/vendors;lib/dri;lib/d3d;vulkan/explicit_layer.d",
+      "version" : "1.4",
+      "versions" : "20.08;1.4"
+    },
+    "org.freedesktop.Platform.VAAPI.Intel" : {
+      "directory" : "lib/dri/intel-vaapi-driver",
+      "download-if" : "have-intel-gpu"
+    },
+    "org.gnome.Platform.Compat.i386.Debug" : {
+      "directory" : "lib/debug/lib/i386-linux-gnu",
+      "version" : "20.08"
+    }
+  }
+}
