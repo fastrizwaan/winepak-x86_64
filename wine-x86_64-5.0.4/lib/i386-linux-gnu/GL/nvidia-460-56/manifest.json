@@ -1,0 +1,80 @@
+{
+  "id" : "org.freedesktop.Platform.GL.nvidia-460-56",
+  "branch" : "1.4",
+  "runtime" : "org.freedesktop.Platform",
+  "runtime-version" : "1.6",
+  "runtime-commit" : "ee9252e93164181603d5464e4c3dd960fdc815b7bfb6da255d6120b172cd1ce7",
+  "sdk" : "org.freedesktop.Sdk",
+  "sdk-commit" : "efda356f8f8e2660a0c9a8f2039014149126cb3130d8ce7e3e3464f293304004",
+  "build-options" : {
+    "cflags" : "-O2 -g -I/usr/lib/GL/nvidia-460-56/include",
+    "cxxflags" : "-O2 -g",
+    "prefix" : "/usr/lib/GL/nvidia-460-56",
+    "env" : {
+      "V" : "1",
+      "LDFLAGS" : "-L/usr/lib/GL/nvidia-460-56/lib"
+    }
+  },
+  "modules" : [
+    {
+      "name" : "libarchive",
+      "config-opts" : [
+        "--disable-shared",
+        "--enable-static",
+        "--disable-xattr",
+        "--disable-acl",
+        "--without-bz2lib",
+        "--without-iconv",
+        "--without-lz4",
+        "--without-lzo2",
+        "--without-nettle",
+        "--without-openssl",
+        "--without-xml2",
+        "--without-expat",
+        "--disable-bsdcat",
+        "--disable-bsdcpio",
+        "--disable-bsdtar"
+      ],
+      "sources" : [
+        {
+          "url" : "http://www.libarchive.org/downloads/libarchive-3.2.2.tar.gz",
+          "sha256" : "691c194ee132d1f0f7a42541f091db811bc2e56f7107e9121be2bc8c04f1060f",
+          "type" : "archive"
+        }
+      ],
+      "cleanup" : [
+        "/include",
+        "/share"
+      ]
+    },
+    {
+      "name" : "nvidia",
+      "no-autogen" : true,
+      "make-args" : [
+        "NVIDIA_VERSION=460-56",
+        "NVIDIA_URL=https://us.download.nvidia.com/XFree86/Linux-x86_64/460.56/NVIDIA-Linux-x86_64-460.56.run"
+      ],
+      "sources" : [
+        {
+          "path" : "nvidia-Makefile",
+          "dest-filename" : "makefile",
+          "type" : "file"
+        },
+        {
+          "path" : "nvidia-apply-extra.c",
+          "type" : "file"
+        }
+      ]
+    }
+  ],
+  "cleanup" : [
+  ],
+  "build-extension" : true,
+  "separate-locales" : false,
+  "sdk-extensions" : [
+  ],
+  "finish-args" : [
+    "--extra-data=:4e571cba0d1f6f5116689dca9f4b396b3e7f6c3d4de14ce3143d52f834e57300:178496173::https://us.download.nvidia.com/XFree86/Linux-x86_64/460.56/NVIDIA-Linux-x86_64-460.56.run",
+    "--metadata=Extra Data=NoRuntime"
+  ]
+}

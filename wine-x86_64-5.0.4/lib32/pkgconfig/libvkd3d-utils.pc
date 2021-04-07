@@ -1,0 +1,10 @@
+prefix=/app
+exec_prefix=/app
+libdir=/app/lib32
+includedir=/app/include
+
+Name: vkd3d-utils
+Description: The vkd3d 3D Graphics Utility Library
+Version: 1.2
+Cflags: -I${includedir}/vkd3d
+Libs: -L${libdir} -lvkd3d-utils

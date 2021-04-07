@@ -1,0 +1,15 @@
+; File generated automatically from ../dlls/d3d12/d3d12.spec; do not edit!
+
+LIBRARY d3d12.dll
+
+EXPORTS
+  GetBehaviorValue@0 @100 PRIVATE
+  D3D12CreateDevice@16 @101
+  D3D12GetDebugInterface@8 @102
+  D3D12CoreCreateLayeredDevice@0 @103 PRIVATE
+  D3D12CoreGetLayeredDeviceSize@0 @104 PRIVATE
+  D3D12CoreRegisterLayers@0 @105 PRIVATE
+  D3D12CreateRootSignatureDeserializer@16 @106
+  D3D12EnableExperimentalFeatures@16 @107
+  D3D12SerializeRootSignature@16 @108
+  D3D12SerializeVersionedRootSignature@12 @109
