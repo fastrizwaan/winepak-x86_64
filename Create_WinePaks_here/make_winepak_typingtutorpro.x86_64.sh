@@ -32,7 +32,7 @@ WINEEXE="/app/bin/wine"
 ARCH="x86_64"
 #WINEVERSION="wine32-6.0-winepak.x86_64"
 #WINEVERSION="wine-x86_64-6.0"
-WINEVERSION="wine-x86_64-5.0.4"
+WINEVERSION="../runners/wine-x86_64-5.0.4"
 #Output
 echo "2.  Creating new target-$NAME directory	[x]"
 
