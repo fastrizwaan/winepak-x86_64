@@ -32,7 +32,7 @@ WINEEXE="/app/bin/wine"
 ARCH="x86_64"
 #WINEVERSION="wine32-6.0-winepak.x86_64"
 #WINEVERSION="wine-x86_64-6.0"
-WINEVERSION="../runners/wine-x86_64-5.0.4"
+WINEVERSION="wine-x86_64-5.0.4"
 #Output
 echo "2.  Creating new target-$NAME directory	[x]"
 
@@ -226,7 +226,7 @@ rm -f hello-?.png $EXE*.ico
 echo "10. Copying all files 	 		[x]"
 cp -rd "$APP" target-$NAME/package/files/
 #32 bit wine files are copied to 
-cp -rdf ../$WINEVERSION/* target-$NAME/package/files
+cp -rdf ../runners/$WINEVERSION/* target-$NAME/package/files
 
 chmod +x target-$NAME/package/files/bin/run.sh
 chmod +x target-$NAME/\[winepak.x86_64\]$DOT_NAME/install.sh
