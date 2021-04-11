@@ -31,7 +31,7 @@ DOT_NAME=$(echo "$NICE_NAME" | tr " " . )
 WINEEXE="/app/bin/wine"
 ARCH="x86_64"
 #WINEVERSION="wine32-6.0-flatpak-wine32"
-WINEVERSION="../runners/wine-x86_64-6.0"
+WINEVERSION="wine-x86_64-6.0"
 #WINEVERSION="../runners/proton-x86_64-6.4"
 #Output
 echo "2.  Creating new target directory	[x]"
@@ -227,7 +227,7 @@ rm -f hello-?.png $EXE*.ico
 echo "10. Copying all files 	 		[x]"
 cp -rd "$APP" target/package/files/
 #32 bit wine files are copied to 
-cp -rdf ../$WINEVERSION/* target/package/files
+cp -rdf ../runners/$WINEVERSION/* target/package/files
 
 chmod +x target/package/files/bin/run.sh
 chmod +x target/\[winepak.x86_64\]$DOT_NAME/install.sh
