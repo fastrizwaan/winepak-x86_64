@@ -18,21 +18,21 @@ sh ./commandline.sh
 ```
 
 
-winepak-x86_64 uses Flatpak Sdk 20.08 with Compat.i386 runtime, please install dependencies.
+winepak-x86_64 uses Flatpak Sdk 21.08 with Compat.i386 runtime, please install dependencies.
 
 ## Install dependencies
 ```
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 sudo flatpak install \
-runtime/org.freedesktop.Sdk/x86_64/20.08                           \
-org.freedesktop.Platform/x86_64/20.08                              \
-runtime/org.freedesktop.Sdk.Compat.i386/x86_64/20.08               \
-runtime/org.freedesktop.Sdk.Extension.toolchain-i386/x86_64/20.08  \
-org.freedesktop.Platform.GL.default/x86_64/20.08                   \
-org.freedesktop.Platform.VAAPI.Intel/x86_64/20.08                  \
+runtime/org.freedesktop.Sdk/x86_64/21.08                           \
+org.freedesktop.Platform/x86_64/21.08                              \
+runtime/org.freedesktop.Sdk.Compat.i386/x86_64/21.08               \
+runtime/org.freedesktop.Sdk.Extension.toolchain-i386/x86_64/21.08  \
+org.freedesktop.Platform.GL.default/x86_64/21.08                   \
+org.freedesktop.Platform.VAAPI.Intel/x86_64/21.08                  \
 org.freedesktop.Platform.openh264/x86_64/2.0                       \
-org.freedesktop.Platform.Compat.i386/x86_64/20.08                  \
-org.freedesktop.Platform.GL32.default/x86_64/20.08
+org.freedesktop.Platform.Compat.i386/x86_64/21.08                  \
+org.freedesktop.Platform.GL32.default/x86_64/21.08
 
 ```
 #### if you have nvidia gpu, and the game complains about D3D or Opengl or GL install nvidia drivers install nvidia drivers 
@@ -42,9 +42,9 @@ NVERSION=$(nvidia-settings -q all |grep OpenGLVersion|grep NVIDIA|sed 's/.*NVIDI
 sudo flatpak install flathub org.freedesktop.Platform.GL32.$NVERSION -y
 ```
 
-This bundle is created using "direct play" or "no-install" directory. for Installers (e.g., Setup.exe) use `flatpak wine-x86_64` see below.
+This bundle is created using "direct play" or "no-install" directory. for Installers (e.g., Setup.exe) use `flatpak-wine` see below.
 
-### wine used in this winepak-x86_64 from with 20.08 runtime
+### wine used in this winepak-x86_64 from with 21.08 runtime, Also flatpak-wine 0.84+ can create game bundles 10 times faster than winepak, please try:
 https://github.com/fastrizwaan/flatpak-wine
 
 
