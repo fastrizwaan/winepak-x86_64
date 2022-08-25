@@ -1,0 +1,129 @@
+#!/bin/bash
+# Script that was used to build this package. Enjoy
+
+NAME="$1"; shift
+APP="$1"; shift
+EXE="$1"; shift
+
+# [ -z "$WINE" ] && WINE=~/.PlayOnLinux/wine/linux-amd64/2.17-staging
+[ -z "$WINE" ] && WINE=~/.PlayOnLinux/wine/linux-x86/2.17-staging
+
+NICE_NAME=$(echo $(echo "$NAME" | sed 's/[A-Z]/ \0/g'))
+DOT_NAME=$(echo "$NICE_NAME" | tr " " . )
+WINEEXE="/app/bin/wine64"
+SRCLIB="/usr/lib/"
+LDLINUX=""
+ARCH="x86_64"
+LIB="lib64"
+
+if [[ "$WINE" == *"x86"* ]] ; then
+	WINEEXE="/app/bin/wine"
+	SRCLIB="/usr/lib32/"
+	LDLINUX=$SRCLIB/ld-linux.so.2
+	ARCH="i386"
+	LIB="lib"
+fi
+
+mkdir -p target/package/files/bin
+mkdir -p target/package/files/lib
+mkdir -p target/package/export/share/applications
+mkdir -p target/package/export/share/icons/hicolor
+mkdir -p target/\[Flatpak-Linux\]$DOT_NAME
+
+cat << EOF > target/package/files/bin/run.sh
+#!/bin/bash
+mkdir -p /tmp/wine.$$.prefix/
+export WINEPREFIX=\$HOME/.local/share/flatpak-linux/$NAME/
+export WINEDLLOVERRIDES="mscoree=d;mshtml=d;"
+export WINEEXE="$WINEEXE"
+
+cd "/app/$(basename "$APP")"
+
+if [ -e Flatpak-Linux.md ] ; then
+	cat Flatpak-Linux.md | sed -e "s|FLATPAKNAME|org.flatpaklinux.$NAME|" -e "s|WINEPREFIX|\$WINEPREFIX|"
+fi
+
+if [ "\$1" == "winecfg" ] ; then
+	$WINEEXE winecfg
+elif [ "\$1" == "bash" ] ; then
+	bash 
+elif [ -e run.sh ] ; then
+	sh run.sh \$@
+	exit $?
+else
+	$WINEEXE "$EXE" \$@
+	exit $?
+fi
+EOF
+
+cat << EOF >target/package/metadata
+[Application]
+name=org.flatpaklinux.$NAME
+runtime=org.freedesktop.Platform/$ARCH/1.6
+command=run.sh
+
+[Context]
+features=devel;multiarch;
+shared=network;ipc;
+sockets=x11;pulseaudio;
+devices=dri;
+filesystems=xdg-documents;~/.local/share/flatpak-linux/:create
+EOF
+
+cat << EOF >target/\[Flatpak-Linux\]$DOT_NAME/install.sh
+#!/bin/bash
+# Installs game bundle for user.
+# You can delete everything after installation.
+
+DIR=\$(dirname "\$0")
+set -ex
+flatpak --user remote-add --if-not-exists --from gnome https://sdk.gnome.org/gnome.flatpakrepo || true
+flatpak --user install -y --app --bundle "\$DIR/$NAME.flatpak" || echo "Installation failed. Check if you have Flatpak properly configured. See http://flatpak.org/ for more info."
+EOF
+
+cat << EOF >target/\[Flatpak-Linux\]$DOT_NAME/uninstall.sh
+#!/bin/bash
+# You can as well use package manager to uninstall the game
+echo You can as well use package manager to uninstall the game
+
+set -ex
+flatpak --user uninstall org.flatpaklinux.$NAME
+EOF
+
+cat << EOF >target/\[Flatpak-Linux\]$DOT_NAME/run.sh
+#!/bin/bash
+set -ex
+flatpak run org.flatpaklinux.$NAME \$@
+EOF
+
+cat << EOF >target/package/export/share/applications/org.flatpaklinux.$NAME.desktop
+[Desktop Entry]
+Version=1.0
+Name=$NICE_NAME
+Exec=run.sh
+Icon=org.flatpaklinux.$NAME
+StartupNotify=true
+Terminal=false
+Type=Application
+Categories=Game;
+EOF
+
+
+set -ex
+[ -e "$APP"/icon.png ] && cp "$APP"/icon.png target/package/export/share/icons/hicolor/org.flatpaklinux.$NAME.png
+cp -rd "$APP" target/package/files/
+cp -rd $WINE/bin $WINE/$LIB $WINE/share target/package/files/
+cp -d $SRCLIB/libpng12.so* target/package/files/lib
+cp -d $SRCLIB/libudev.so* target/package/files/lib
+find target/package/files/$LIB -iname "*libz*" -print -delete
+[ ! -z $LDLINUX ] && cp $LDLINUX target/package/files/$LIB
+
+chmod +x target/package/files/bin/run.sh
+chmod +x target/\[Flatpak-Linux\]$DOT_NAME/install.sh
+chmod +x target/\[Flatpak-Linux\]$DOT_NAME/uninstall.sh
+chmod +x target/\[Flatpak-Linux\]$DOT_NAME/run.sh
+cp "$0" target/package/files/flatpak-make
+
+
+flatpak build-export target/repo target/package
+flatpak build-bundle --arch=$ARCH target/repo target/\[Flatpak-Linux\]$DOT_NAME/$NAME.flatpak org.flatpaklinux.$NAME
