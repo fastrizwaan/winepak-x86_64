@@ -1,4 +1,10 @@
 # winepak-x86_64
+this is outdated
+
+## Please use WINEZGUI 
+![](https://raw.githubusercontent.com/fastrizwaan/WineZGUI/main/assets/winezgui.svg) <a href="https://flathub.org/apps/details/io.github.fastrizwaan.WineZGUI"><img width='240' alt='Download on Flathub' src='https://dl.flathub.org/assets/badges/flathub-badge-en.png'/></a>
+
+
 Create and Run Windows 32 bit, and 64 bit Games & Applications Flatpak bundle, Which can be run from desktop shortcut. They are sandboxed, like playonlinux's bottle. 
 
 This is a tribute to original author of flatpak-linux.
